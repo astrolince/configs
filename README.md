@@ -27,7 +27,9 @@ Set DNS to 127.0.2.1 and disable IPv6 from GUI, reconnect to the network
 ### Git
 
 `$ git config --global color.ui true`
+
 `$ git config --global user.name "astrolince"`
+
 `$ git config --global user.email "astro@astrolince.com"`
 
 Restore keys to `~/.ssh`
