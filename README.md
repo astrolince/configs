@@ -2,15 +2,13 @@
 
 ### General
 
-`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2`
+`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
 `$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop`
 
 ### Stubby
-
-`$ sudo apt install stubby`
 
 [/etc/stubby/stubby.yml](/etc/stubby/stubby.yml)
 
