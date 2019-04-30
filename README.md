@@ -32,6 +32,10 @@ Import the private key
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
 
+### Rust
+
+`$ curl https://sh.rustup.rs -sSf | sh`
+
 ### Hosty
 
 `$ curl -L git.io/hosty | sh`
