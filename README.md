@@ -2,7 +2,7 @@
 
 ### General
 
-`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby tor torbrowser-launcher transmission-gtk`
+`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby tor torbrowser-launcher transmission-gtk steam`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
@@ -16,13 +16,13 @@ Set DNS to 127.0.0.1 and ::1
 
 ### Bitcoin Core
 
-https://bitcoincore.org/en/download/
+[https://bitcoincore.org/en/download/](Download)
 
 [~/.bitcoin/bitcoin.conf](~/.bitcoin/bitcoin.conf)
 
 ### Keybase
 
-https://keybase.io/docs/the_app/install_linux
+[https://keybase.io/docs/the_app/install_linux](Install)
 
 Import the public key
 
@@ -38,7 +38,7 @@ Import the private key
 
 ### Brave
 
-https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux
+[https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux](Install)
 
 Extensions
 
@@ -56,8 +56,8 @@ https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedf
 
 ### VSCodium
 
-https://github.com/VSCodium/vscodium/releases
+[https://github.com/VSCodium/vscodium/releases](Install)
 
 ### Standard Notes
 
-https://standardnotes.org/extensions?downloaded=linux
+[https://standardnotes.org/extensions?downloaded=linux](Download)
