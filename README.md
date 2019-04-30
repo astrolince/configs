@@ -31,3 +31,7 @@ Import the public key
 Import the private key
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
+
+### Telegram
+
+`$ flatpak install flathub org.telegram.desktop`
