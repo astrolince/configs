@@ -18,8 +18,10 @@ https://bitcoincore.org/en/download/
 
 https://keybase.io/docs/the_app/install_linux
 
-#### Import the public key
+Import the public key
+
 `$ keyabse pgp export | gpg --import`
 
-#### Import the private key
+Import the private key
+
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
