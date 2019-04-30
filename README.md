@@ -8,6 +8,10 @@
 
 `$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.gimp.GIMP org.kde.kdenlive`
 
+### Vim
+
+[~/.vimrc](~/.vimrc)
+
 ### Stubby
 
 [/etc/stubby/stubby.yml](/etc/stubby/stubby.yml)
