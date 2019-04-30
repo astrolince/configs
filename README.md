@@ -1,5 +1,11 @@
 ## Linux
 
+### General
+
+`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak`
+
+`$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+
 ### Stubby
 
 `$ sudo apt install stubby`
