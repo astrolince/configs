@@ -22,11 +22,7 @@
 
 ### dnscrypt-proxy
 
-[/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
-
-`$ sudo systemctl restart dnscrypt-proxy`
-
-Set DNS to 127.0.2.1 from GUI and reconnect to the network
+Set DNS to 127.0.2.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Bitcoin Core
 
