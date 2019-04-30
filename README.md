@@ -57,3 +57,7 @@ https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedf
 ### VSCodium
 
 https://github.com/VSCodium/vscodium/releases
+
+### Standard Notes
+
+https://standardnotes.org/extensions?downloaded=linux
