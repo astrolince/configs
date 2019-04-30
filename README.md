@@ -91,3 +91,7 @@ Extensions
 ### Standard Notes
 
 [Download](https://standardnotes.org/extensions?downloaded=linux)
+
+### Nextcloud
+
+Add it to GNOME Online Accounts
