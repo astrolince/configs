@@ -2,11 +2,11 @@
 
 ### General
 
-`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby`
+`$ sudo apt install tree vim build-essential fastboot adb snapd flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby tor torbrowser-launcher transmission-gtk`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop`
+`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.gimp.GIMP`
 
 ### Stubby
 
