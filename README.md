@@ -33,3 +33,11 @@ Import the public key
 Import the private key
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
+
+### Hosty
+
+`$ curl -L git.io/hosty | sh`
+
+### Brave
+
+https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux
