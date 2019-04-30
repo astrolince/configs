@@ -2,5 +2,7 @@
 
 ## Stubby
 
-/etc/stubby/stubby.yml
+`$ sudo apt install stubby`
+
+[/etc/stubby/stubby.yml](/etc/stubby/stubby.yml)
 
