@@ -24,22 +24,6 @@
 
 Set DNS to 127.0.2.1 and disable IPv6 from GUI, reconnect to the network
 
-### Git
-
-`$ git config --global color.ui true`
-
-`$ git config --global user.name "astrolince"`
-
-`$ git config --global user.email "astro@astrolince.com"`
-
-Restore keys to `~/.ssh`
-
-### Bitcoin Core
-
-[Download](https://bitcoincore.org/en/download/)
-
-[~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
-
 ### Keybase
 
 [Install](https://keybase.io/docs/the_app/install_linux)
@@ -51,6 +35,28 @@ Import the public key
 Import the private key
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
+
+### Git
+
+`$ git config --global color.ui true`
+
+`$ git config --global user.name "astrolince"`
+
+`$ git config --global user.email "astro@astrolince.com"`
+
+Restore keys to `~/.ssh`
+
+`$ git config --global user.signingkey CC39C6D77BDF0053`
+
+`$ git config --global commit.gpgsign true`
+
+`$ echo 'export GPG_TTY=$(tty)' >> ~/.profile`
+
+### Bitcoin Core
+
+[Download](https://bitcoincore.org/en/download/)
+
+[~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
 
 ### Rust
 
