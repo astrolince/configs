@@ -20,6 +20,8 @@ Set DNS to 127.0.0.1 and ::1
 
 [/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
 
+`$ sudo systemctl restart NetworkManager`
+
 ### Bitcoin Core
 
 [Download](https://bitcoincore.org/en/download/)
