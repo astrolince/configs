@@ -6,6 +6,8 @@
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
+`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop`
+
 ### Stubby
 
 `$ sudo apt install stubby`
@@ -31,7 +33,3 @@ Import the public key
 Import the private key
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
-
-### Telegram
-
-`$ flatpak install flathub org.telegram.desktop`
