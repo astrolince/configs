@@ -10,11 +10,11 @@
 
 ### Vim
 
-[~/.vimrc](~/.vimrc)
+[~/.vimrc](https://raw.githubusercontent.com/astrolince/configs/master/~/.vimrc)
 
 ### Stubby
 
-[/etc/stubby/stubby.yml](/etc/stubby/stubby.yml)
+[/etc/stubby/stubby.yml](https://raw.githubusercontent.com/astrolince/configs/master/etc/stubby/stubby.yml)
 
 `$ sudo systemctl enable stubby && sudo systemctl start stubby`
 
@@ -22,7 +22,7 @@ Set DNS to 127.0.0.1 and ::1
 
 ### NetworkManager
 
-[/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
+[/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
 
 `$ sudo systemctl restart NetworkManager`
 
@@ -30,7 +30,7 @@ Set DNS to 127.0.0.1 and ::1
 
 [Download](https://bitcoincore.org/en/download/)
 
-[~/.bitcoin/bitcoin.conf](~/.bitcoin/bitcoin.conf)
+[~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
 
 ### Keybase
 
