@@ -41,3 +41,7 @@ Import the private key
 ### Brave
 
 https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux
+
+### VSCodium
+
+https://github.com/VSCodium/vscodium/releases
