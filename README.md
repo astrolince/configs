@@ -26,7 +26,7 @@
 
 `$ sudo systemctl restart dnscrypt-proxy`
 
-Set DNS to 127.0.0.1 and ::1
+Set DNS to 127.0.2.1 from GUI and reconnect to the network
 
 ### Bitcoin Core
 
