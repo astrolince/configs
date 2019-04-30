@@ -95,3 +95,8 @@ Extensions
 ### Nextcloud
 
 Add it to GNOME Online Accounts
+
+### Wasabi Wallet
+
+[Install](https://github.com/zkSNACKs/WalletWasabi/releases)
+
