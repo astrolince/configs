@@ -12,6 +12,8 @@
 
 [/etc/stubby/stubby.yml](/etc/stubby/stubby.yml)
 
+`$ sudo systemctl enable stubby && sudo systemctl start stubby`
+
 Set DNS to 127.0.0.1 and ::1
 
 ### Bitcoin Core
