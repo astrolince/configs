@@ -20,7 +20,7 @@ https://keybase.io/docs/the_app/install_linux
 
 Import the public key
 
-`$ keyabse pgp export | gpg --import`
+`$ keybase pgp export | gpg --import`
 
 Import the private key
 
