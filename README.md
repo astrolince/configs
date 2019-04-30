@@ -8,3 +8,8 @@
 
 Set DNS to 127.0.0.1 and ::1
 
+## Bitcoin Core
+
+https://bitcoincore.org/en/download/
+
+[~/.bitcoin/bitcoin.conf](~/.bitcoin/bitcoin.conf)
