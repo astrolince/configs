@@ -2,7 +2,7 @@
 
 ### General
 
-`$ sudo apt install tree vim build-essential fastboot adb flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 stubby tor torbrowser-launcher transmission-gtk steam golang`
+`$ sudo apt install tree vim build-essential fastboot adb flatpak gnome-software-plugin-flatpak curl gawk p7zip-full gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
@@ -12,19 +12,21 @@
 
 [~/.vimrc](https://raw.githubusercontent.com/astrolince/configs/master/~/.vimrc)
 
-### Stubby
-
-[/etc/stubby/stubby.yml](https://raw.githubusercontent.com/astrolince/configs/master/etc/stubby/stubby.yml)
-
-`$ sudo systemctl enable stubby && sudo systemctl start stubby`
-
-Set DNS to 127.0.0.1 and ::1
-
 ### NetworkManager
+
+[/etc/NetworkManager/NetworkManager.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/NetworkManager.conf)
 
 [/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
 
 `$ sudo systemctl restart NetworkManager`
+
+### dnscrypt-proxy
+
+[/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
+
+`$ sudo systemctl restart dnscrypt-proxy`
+
+Set DNS to 127.0.0.1 and ::1
 
 ### Bitcoin Core
 
