@@ -16,13 +16,13 @@ Set DNS to 127.0.0.1 and ::1
 
 ### Bitcoin Core
 
-[https://bitcoincore.org/en/download/](Download)
+[Download](https://bitcoincore.org/en/download/)
 
 [~/.bitcoin/bitcoin.conf](~/.bitcoin/bitcoin.conf)
 
 ### Keybase
 
-[https://keybase.io/docs/the_app/install_linux](Install)
+[Install](https://keybase.io/docs/the_app/install_linux)
 
 Import the public key
 
@@ -38,7 +38,7 @@ Import the private key
 
 ### Brave
 
-[https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux](Install)
+[Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
 Extensions
 
@@ -56,8 +56,8 @@ https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedf
 
 ### VSCodium
 
-[https://github.com/VSCodium/vscodium/releases](Install)
+[Install](https://github.com/VSCodium/vscodium/releases)
 
 ### Standard Notes
 
-[https://standardnotes.org/extensions?downloaded=linux](Download)
+[Download](https://standardnotes.org/extensions?downloaded=linux)
