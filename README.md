@@ -2,11 +2,13 @@
 
 ### General
 
-`$ sudo apt install git tree vim build-essential fastboot adb flatpak snapd gnome-software-plugin-flatpak gnome-software-plugin-snap curl gawk p7zip-full gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp firefox chromium-browser audacity libreoffice peek vlc gnome-boxes exa`
+`$ sudo apt install git tree vim build-essential fastboot adb flatpak snapd gnome-software-plugin-flatpak gnome-software-plugin-snap curl gawk p7zip-full gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice peek vlc gnome-boxes exa`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
 `$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive`
+
+`$ sudo snap install firefox chromium`
 
 ### Vim
 
