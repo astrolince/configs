@@ -62,6 +62,10 @@ Restore keys to `~/.ssh`
 
 `$ curl https://sh.rustup.rs -sSf | sh`
 
+### nvm
+
+[Install](https://github.com/nvm-sh/nvm#install--update-script)
+
 ### Hosty
 
 `$ curl -L git.io/hosty | sh`
