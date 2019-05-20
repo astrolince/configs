@@ -8,7 +8,7 @@
 
 `$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive com.uploadedlobster.peek`
 
-`$ sudo snap install firefox chromium`
+`$ sudo snap install chromium`
 
 ### Vim
 
