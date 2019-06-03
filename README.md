@@ -14,8 +14,6 @@
 
 ### NetworkManager
 
-[/etc/NetworkManager/NetworkManager.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/NetworkManager.conf)
-
 [/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
 
 `$ sudo systemctl restart NetworkManager`
