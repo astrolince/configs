@@ -104,6 +104,8 @@ Add it to GNOME Online Accounts
 
 ### GNOME Extensions
 
+[Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+
 [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
 [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
