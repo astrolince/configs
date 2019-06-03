@@ -108,6 +108,8 @@ Add it to GNOME Online Accounts
 
 [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
+[cpufreq](https://extensions.gnome.org/extension/1082/cpufreq/)
+
 [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
 
 [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
