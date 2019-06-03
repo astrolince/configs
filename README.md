@@ -1,14 +1,12 @@
-## Linux: [Pop!_OS 19.04](https://system76.com/pop)
+## Linux: [Fedora 30](https://getfedora.org/en/workstation/)
 
 ### General
 
-`$ sudo apt install git tree vim build-essential fastboot adb flatpak snapd gnome-software-plugin-flatpak gnome-software-plugin-snap curl gawk p7zip-full gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice vlc gnome-boxes exa gamemode neofetch`
+`$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive com.uploadedlobster.peek`
-
-`$ sudo snap install chromium`
+`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive com.uploadedlobster.peek org.videolan.VLC`
 
 ### Vim
 
@@ -24,7 +22,7 @@
 
 ### dnscrypt-proxy
 
-Set DNS to 127.0.2.1 and disable IPv6 from GUI, reconnect to the network
+Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Oh My Zsh
 
