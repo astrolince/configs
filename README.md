@@ -2,7 +2,7 @@
 
 ### General
 
-`$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch`
+`$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip gnupg wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
