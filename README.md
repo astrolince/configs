@@ -102,6 +102,16 @@ Extensions
 
 Add it to GNOME Online Accounts
 
+### GNOME Extensions
+
+[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+
+[Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
+
+[GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+
+[OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+
 ### Wasabi Wallet
 
 [Install](https://github.com/zkSNACKs/WalletWasabi/releases)
