@@ -78,6 +78,8 @@ Restore keys to `~/.ssh`
 
 [Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
+Disable "Use hardware acceleration when available" (disgusting performance).
+
 Extensions
 
 [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
