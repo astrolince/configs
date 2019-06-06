@@ -110,11 +110,15 @@ Add it to GNOME Online Accounts
 
 ### GNOME Extensions
 
+[Bitcoin Markets](https://extensions.gnome.org/extension/648/bitcoin-markets/)
+
 [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
 [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
 [cpufreq](https://extensions.gnome.org/extension/1082/cpufreq/)
+
+[Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
 [Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
 
