@@ -32,13 +32,15 @@ Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 [Install](https://keybase.io/docs/the_app/install_linux)
 
-Import the public key
+Import the public key:
 
 `$ keybase pgp export | gpg --import`
 
-Import the private key
+Import the private key:
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
+
+Keep automatic startup disabled (crappy performance).
 
 ### Git
 
