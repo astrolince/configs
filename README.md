@@ -1,5 +1,9 @@
 ## Linux: [Fedora 30](https://getfedora.org/en/workstation/)
 
+### dnf tweaks
+
+[/etc/dnf/dnf.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnf/dnf.conf)
+
 ### General
 
 `$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien`
