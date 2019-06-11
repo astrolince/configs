@@ -24,6 +24,8 @@
 
 ### dnscrypt-proxy
 
+[/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
+
 Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Oh My Zsh
