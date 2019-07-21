@@ -76,6 +76,18 @@ Extensions:
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
 
+### Steam
+
+Launch options for games optimization
+
+Native games:
+
+`GAMEMODERUNEXEC="env DRI_PRIME=1 mesa_glthread=true" gamemoderun %command%`
+
+Proton games:
+
+`GAMEMODERUNEXEC="env DRI_PRIME=1 mesa_glthread=true PROTON_NO_ESYNC=1" gamemoderun %command%`
+
 ### Standard Notes
 
 [Download](https://standardnotes.org/extensions?downloaded=linux)
