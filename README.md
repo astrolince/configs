@@ -1,16 +1,12 @@
-## Linux: [Fedora 30](https://getfedora.org/en/workstation/)
-
-### dnf tweaks
-
-[/etc/dnf/dnf.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnf/dnf.conf)
+## Linux: [Manjaro KDE](https://manjaro.org/download/)
 
 ### General
 
-`$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien openssl-devel readline-devel`
+`$ sudo pacman -Syyu tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive com.uploadedlobster.peek org.videolan.VLC`
+`$ flatpak install flathub im.riot.Riot com.bitwarden.desktop`
 
 ### Vim
 
@@ -84,8 +80,6 @@ Restore keys to `~/.ssh`
 
 [Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
-Disable "Use hardware acceleration when available" (disgusting performance).
-
 Extensions:
 
 [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
@@ -93,8 +87,6 @@ Extensions:
 [Cookie AutoDelete](https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh)
 
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
-
-[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
 [History AutoDelete](https://chrome.google.com/webstore/detail/history-autodelete/bhfakmaiadhflpjloimlagikhodjiefj)
 
@@ -132,15 +124,6 @@ Add it to GNOME Online Accounts
 
 [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 
-### gpa
-
-Download the deb package from https://packages.ubuntu.com/disco/gpa, convert to rpm with:
-
-`$ alien -r  -c -v  gpa*.deb`
-
-and install it with:
-
-`$ sudo rpm --install gpa*.rpm --nodeps --force`
 
 ### Wasabi Wallet
 
