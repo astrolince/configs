@@ -2,11 +2,11 @@
 
 ### General
 
-`$ sudo pacman -Syyu tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak keybase-gui gpa rust brave`
+`$ sudo pacman -Syyu tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak keybase-gui gpa rust brave bitcoin-qt nodejs code`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub im.riot.Riot com.bitwarden.desktop`
+`$ flatpak install flathub com.bitwarden.desktop`
 
 ### Vim
 
@@ -32,8 +32,6 @@ Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Keybase
 
-[Install](https://keybase.io/docs/the_app/install_linux)
-
 Import the public key:
 
 `$ keybase pgp export | gpg --import`
@@ -41,8 +39,6 @@ Import the public key:
 Import the private key:
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
-
-Keep automatic startup disabled (crappy performance).
 
 ### Git
 
@@ -60,25 +56,13 @@ Restore keys to `~/.ssh`
 
 ### Bitcoin Core
 
-[Download](https://bitcoincore.org/en/download/)
-
 [~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
-
-### Rust
-
-`$ curl https://sh.rustup.rs -sSf | sh`
-
-### nvm
-
-[Install](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Hosty
 
 `$ curl -L git.io/hosty | sh`
 
 ### Brave
-
-[Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
 Extensions:
 
@@ -88,15 +72,9 @@ Extensions:
 
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
 
-[History AutoDelete](https://chrome.google.com/webstore/detail/history-autodelete/bhfakmaiadhflpjloimlagikhodjiefj)
-
 [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
-
-### VSCodium
-
-[Install](https://github.com/VSCodium/vscodium/releases)
 
 ### Standard Notes
 
