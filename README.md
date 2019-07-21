@@ -96,9 +96,9 @@ Proton games:
 
 ### Standard Notes
 
-[Download](https://standardnotes.org/extensions?downloaded=linux)
+`$ yay standardnotes-desktop`
 
 ### Wasabi Wallet
 
-[Install](https://github.com/zkSNACKs/WalletWasabi/releases)
+`$ yay wasabi-wallet-bin`
 
