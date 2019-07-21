@@ -2,7 +2,9 @@
 
 ### General
 
-`$ sudo pacman -Syyu tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak keybase-gui gpa rust brave bitcoin-qt nodejs code libreoffice-fresh`
+`$ sudo pacman-mirrors --fasttrack && sudo pacman -Syyu`
+
+`$ sudo pacman -S tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak keybase-gui gpa rust brave bitcoin-qt nodejs code libreoffice-fresh`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
