@@ -10,6 +10,12 @@
 
 `$ flatpak install flathub com.bitwarden.desktop`
 
+### Wifi
+
+ASUS TUF FX505DY driver:
+
+`$ yay rtl8821ce-dkms-git`
+
 ### Vim
 
 [~/.vimrc](https://raw.githubusercontent.com/astrolince/configs/master/~/.vimrc)
@@ -93,6 +99,10 @@ Native games:
 Proton games:
 
 `GAMEMODERUNEXEC="env DRI_PRIME=1 mesa_glthread=true PROTON_NO_ESYNC=1" gamemoderun %command%`
+
+To fix Black Mesa, install:
+
+`$ yay lib32-gperftools`
 
 ### Standard Notes
 
