@@ -106,7 +106,7 @@ To fix Black Mesa, install:
 
 ### Standard Notes
 
-`$ yay standardnotes-desktop`
+[Download](https://standardnotes.org/extensions?downloaded=linux)
 
 ### Wasabi Wallet
 
