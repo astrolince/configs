@@ -14,7 +14,7 @@
 
 ASUS TUF FX505DY driver:
 
-`$ yay rtl8821ce-dkms-git`
+`$ yay -S rtl8821ce-dkms-git`
 
 ### Vim
 
@@ -102,7 +102,7 @@ Proton games:
 
 To fix Black Mesa, install:
 
-`$ yay lib32-gperftools`
+`$ yay -S lib32-gperftools`
 
 ### Standard Notes
 
@@ -110,5 +110,5 @@ To fix Black Mesa, install:
 
 ### Wasabi Wallet
 
-`$ yay wasabi-wallet-bin`
+`$ yay -S wasabi-wallet-bin`
 
