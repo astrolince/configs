@@ -1,20 +1,16 @@
-## Linux: [Fedora 31 Workstation](https://getfedora.org/)
+## Linux: [Fedora 30](https://getfedora.org/en/workstation/)
+
+### dnf tweaks
+
+[/etc/dnf/dnf.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnf/dnf.conf)
 
 ### General
 
-`$ sudo pacman-mirrors --fasttrack && sudo pacman -Syyu`
-
-`$ sudo pacman -Syu tree vim android-tools aria2 dnscrypt-proxy tor go gimp audacity exa gamemode neofetch zsh telegram-desktop kdenlive peek riot-desktop flatpak keybase-gui gpa rust brave bitcoin-qt nodejs code libreoffice-fresh pamac`
+`$ sudo dnf install git tree vim fastboot adb flatpak curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam golang gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien openssl-devel readline-devel`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.bitwarden.desktop`
-
-### Wifi
-
-ASUS TUF FX505DY driver:
-
-`$ yay -S rtl8821ce-dkms-git`
+`$ flatpak install flathub org.telegram.desktop im.riot.Riot com.bitwarden.desktop org.kde.kdenlive com.uploadedlobster.peek org.videolan.VLC`
 
 ### Vim
 
@@ -30,10 +26,6 @@ ASUS TUF FX505DY driver:
 
 [/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
 
-`$ sudo systemctl enable dnscrypt-proxy.socket`
-
-`$ sudo systemctl start dnscrypt-proxy.socket`
-
 Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Oh My Zsh
@@ -44,6 +36,8 @@ Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
 
 ### Keybase
 
+[Install](https://keybase.io/docs/the_app/install_linux)
+
 Import the public key:
 
 `$ keybase pgp export | gpg --import`
@@ -51,6 +45,8 @@ Import the public key:
 Import the private key:
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
+
+Keep automatic startup disabled (crappy performance).
 
 ### Git
 
@@ -68,13 +64,27 @@ Restore keys to `~/.ssh`
 
 ### Bitcoin Core
 
+[Download](https://bitcoincore.org/en/download/)
+
 [~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
+
+### Rust
+
+`$ curl https://sh.rustup.rs -sSf | sh`
+
+### nvm
+
+[Install](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Hosty
 
 `$ curl -L git.io/hosty | sh`
 
 ### Brave
+
+[Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
+
+Disable "Use hardware acceleration when available" (disgusting performance).
 
 Extensions:
 
@@ -84,31 +94,54 @@ Extensions:
 
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
 
+[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
+
+[History AutoDelete](https://chrome.google.com/webstore/detail/history-autodelete/bhfakmaiadhflpjloimlagikhodjiefj)
+
 [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
 
-### Steam
+### VSCodium
 
-Launch options for games optimization
-
-Native games:
-
-`GAMEMODERUNEXEC="env DRI_PRIME=1 mesa_glthread=true" gamemoderun %command%`
-
-Proton games:
-
-`GAMEMODERUNEXEC="env DRI_PRIME=1 mesa_glthread=true PROTON_NO_ESYNC=1" gamemoderun %command%`
-
-To fix Black Mesa, install:
-
-`$ yay -S lib32-gperftools`
+[Install](https://github.com/VSCodium/vscodium/releases)
 
 ### Standard Notes
 
 [Download](https://standardnotes.org/extensions?downloaded=linux)
 
+### Nextcloud
+
+Add it to GNOME Online Accounts
+
+### GNOME Extensions
+
+[Bitcoin Markets](https://extensions.gnome.org/extension/648/bitcoin-markets/)
+
+[Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+
+[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+
+[cpufreq](https://extensions.gnome.org/extension/1082/cpufreq/)
+
+[Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+[Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
+
+[GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+
+[OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+
+### gpa
+
+Download the deb package from https://packages.ubuntu.com/disco/gpa, convert to rpm with:
+
+`$ alien -r  -c -v  gpa*.deb`
+
+and install it with:
+
+`$ sudo rpm --install gpa*.rpm --nodeps --force`
+
 ### Wasabi Wallet
 
-`$ yay -S wasabi-wallet-bin`
-
+[Install](https://github.com/zkSNACKs/WalletWasabi/releases)
