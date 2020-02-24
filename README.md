@@ -1,4 +1,4 @@
-## Linux: [Manjaro KDE](https://manjaro.org/download/)
+## Linux: [Fedora 31 Workstation](https://getfedora.org/)
 
 ### General
 
