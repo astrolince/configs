@@ -1,4 +1,4 @@
-## Linux: [Fedora 30](https://getfedora.org/en/workstation/)
+## Linux: [Fedora 31 Workstation](https://getfedora.org/en/workstation/)
 
 ### dnf tweaks
 
