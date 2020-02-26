@@ -26,7 +26,7 @@
 
 [/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
 
-Set DNS to 127.0.0.1 and disable IPv6 from GUI, reconnect to the network
+Set DNS to 127.0.0.1 and ::1
 
 ### Oh My Zsh
 
@@ -46,8 +46,6 @@ Import the private key:
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
 
-Keep automatic startup disabled (crappy performance).
-
 ### Git
 
 `$ git config --global color.ui true`
@@ -61,12 +59,6 @@ Restore keys to `~/.ssh`
 `$ git config --global user.signingkey CC39C6D77BDF0053`
 
 `$ git config --global commit.gpgsign true`
-
-### Bitcoin Core
-
-[Download](https://bitcoincore.org/en/download/)
-
-[~/.bitcoin/bitcoin.conf](https://raw.githubusercontent.com/astrolince/configs/master/~/.bitcoin/bitcoin.conf)
 
 ### Rust
 
@@ -84,23 +76,25 @@ Restore keys to `~/.ssh`
 
 [Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
-Disable "Use hardware acceleration when available" (disgusting performance).
-
 Extensions:
 
 [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
-
-[Cookie AutoDelete](https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh)
 
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
 
 [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
-[History AutoDelete](https://chrome.google.com/webstore/detail/history-autodelete/bhfakmaiadhflpjloimlagikhodjiefj)
-
 [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
+
+[Privacy Possum](https://chrome.google.com/webstore/detail/privacy-possum/ommfjecdpepadiafbnidoiggfpbnkfbj)
+
+[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+
+[Authy Chrome Extension](https://chrome.google.com/webstore/detail/authy-chrome-extension/fhgenkpocbhhddlgkjnfghpjanffonno)
+
+[Snowflake](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie)
 
 ### VSCodium
 
