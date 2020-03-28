@@ -104,28 +104,6 @@ Extensions:
 
 [Download](https://standardnotes.org/extensions?downloaded=linux)
 
-### Nextcloud
-
-Add it to GNOME Online Accounts
-
-### GNOME Extensions
-
-[Bitcoin Markets](https://extensions.gnome.org/extension/648/bitcoin-markets/)
-
-[Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
-
-[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
-
-[cpufreq](https://extensions.gnome.org/extension/1082/cpufreq/)
-
-[Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-
-[Do Not Disturb](https://extensions.gnome.org/extension/1480/do-not-disturb/)
-
-[GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
-
-[OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
-
 ### gpa
 
 Download the deb package from https://packages.ubuntu.com/disco/gpa, convert to rpm with:
@@ -135,7 +113,3 @@ Download the deb package from https://packages.ubuntu.com/disco/gpa, convert to 
 and install it with:
 
 `$ sudo rpm --install gpa*.rpm --nodeps --force`
-
-### Wasabi Wallet
-
-[Install](https://github.com/zkSNACKs/WalletWasabi/releases)
