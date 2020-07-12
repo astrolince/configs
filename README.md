@@ -55,7 +55,13 @@ sudo sysctl --system
 
 ### Vim
 
-[~/.vimrc](https://raw.githubusercontent.com/astrolince/configs/master/~/.vimrc)
+`$ sudo nano ~/.vimrc`
+
+`set showmode
+set autoindent
+set tabstop=4
+set expandtab
+syntax on`
 
 ### NetworkManager
 
