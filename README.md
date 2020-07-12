@@ -138,10 +138,11 @@ Restore keys to `~/.ssh`
 
 ### nvm
 
-[Install](https://github.com/nvm-sh/nvm#install--update-script)
+`$ sudo pacman -Syu --needed nvm`
 
-echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
-  echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
+`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc`
+
+`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc`
 
 ### Hosty
 
