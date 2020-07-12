@@ -8,7 +8,7 @@
 
 ### General
 
-`$ sudo pacman -S git tree vim base-devel curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien ruby python golang`
+`$ sudo pacman -S --needed android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien ruby python golang`
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
