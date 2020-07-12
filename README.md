@@ -36,6 +36,10 @@ sudo systemctl enable --now systemd-swap
 
 y ver si esta funcionando nuestro nuevo swap *en ram* con "swapon --show"
 
+sudo pacman -Syu preload
+
+sudo systemctl enable --now preload
+
 ### Pacman tweaks
 
 `$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
