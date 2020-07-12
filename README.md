@@ -74,11 +74,21 @@ syntax on
 
 ### DNSOverTLS
 
-`$ sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
+`$ sudo nano /etc/systemd/resolved.conf.d/90-dns-over-tls.conf`
 
 DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+
 DNSSEC=yes
+
 DNSOverTLS=yes
+
+`$ sudo /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
+
+[main]
+
+dns=none
+
+systemd-resolved=false
 
 ### Steam tweak
 
