@@ -1,5 +1,11 @@
 ## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
+CPU: AMD Ryzen 5 3600
+
+GPU: AMD Radeon RX 5600 XT
+
+RAM: 16 GB
+
 ### BIOS
 
 - Change "Normal" to "ASUS Optimized".
