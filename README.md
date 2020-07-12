@@ -169,4 +169,4 @@ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 
 ### Standard Notes
 
-[Download](https://standardnotes.org/extensions?downloaded=linux)
+`$ sudo snap install standard-notes`
