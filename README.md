@@ -102,7 +102,7 @@ Edit .desktop command like this:
 
 `$ sudo systemctl restart NetworkManager`
 
-### DNSOverTLS
+### DNS over TLS
 
 `$ sudo nano /etc/systemd/resolved.conf.d/90-dns-over-tls.conf`
 
@@ -127,7 +127,7 @@ Edit .desktop command like this:
 
 `$ sudo pacman -Syu --needed steam gamemode`
 
-- Enable Steam Play in Steam settings and enable all games with the last Proton version.
+- Enable Steam Play in Steam settings and enable all Windows games with the last Proton version.
 
 - Set launch options (per game) to:
 
