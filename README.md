@@ -56,11 +56,11 @@ vm.dirty_ratio=50
 
 `$ sudo nano ~/.vimrc`
 
-> set showmode
-> set autoindent
-> set tabstop=4
-> set expandtab
-> syntax on
+    set showmode
+    set autoindent
+    set tabstop=4
+    set expandtab
+    syntax on
 
 ### NetworkManager
 
