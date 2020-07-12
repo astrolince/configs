@@ -47,7 +47,7 @@
     vm.dirty_background_ratio=1
     vm.dirty_ratio=50
 
-`$ sudo sysctl --system`
+`$ sudo sysctl --load /etc/sysctl.d/90-swappiness.conf`
 
 ### Vim
 
