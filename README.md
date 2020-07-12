@@ -124,13 +124,19 @@
 
 ### Git
 
+`$ sudo pacman -Syu --needed git`
+
 `$ git config --global color.ui true`
 
 `$ git config --global user.name "astrolince"`
 
 `$ git config --global user.email "astro@astrolince.com"`
 
-Restore keys to `~/.ssh`
+`$ ssh-keygen -t rsa -b 4096 -C "astro@astrolince.com"`
+
+`$ cat ~/.ssh/id_rsa.pub`
+
+Paste to https://github.com/settings/ssh.
 
 `$ git config --global user.signingkey CC39C6D77BDF0053`
 
