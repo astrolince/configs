@@ -61,7 +61,7 @@ Edit .desktop command like this:
 
 `$ sudo pacman -Syu --needed vim`
 
-`$ sudo nano ~/.vimrc`
+`$ nano ~/.vimrc`
 
     set showmode
     set autoindent
