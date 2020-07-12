@@ -69,11 +69,13 @@ sudo systemctl enable --now preload
 
 `$ sudo systemctl restart NetworkManager`
 
-### dnscrypt-proxy
+### DNSOverTLS
 
-[/etc/dnscrypt-proxy/dnscrypt-proxy.toml](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnscrypt-proxy/dnscrypt-proxy.toml)
+`sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
 
-Set DNS to 127.0.0.1 and ::1
+DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+DNSSEC=yes
+DNSOverTLS=yes
 
 ### Oh My Zsh
 
