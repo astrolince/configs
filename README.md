@@ -1,4 +1,4 @@
-## Linux: [Manjaro KDE](https://manjaro.org/)
+## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
 ### General
 
