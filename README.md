@@ -24,7 +24,7 @@
 
 ### ZRAM
 
-- Enable ZRAM (you need to disable and delete any working swap you may have first)
+- Enable ZRAM (you need to disable and delete any working swap you may have first):
 
 `$ sudo pacman -Syu --needed systemd-swap`
 
@@ -85,13 +85,13 @@
 
 ### Steam tweak
 
-Install gamemode:
+- Install gamemode:
 
 `sudo pacman -Syu gamemode`
 
-Enable Steam Play in Steam settings and enable all games with the last version.
+- Enable Steam Play in Steam settings and enable all games with the last version.
 
-Set launch options per game to:
+- Set launch options per game to:
 
 `mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
 
