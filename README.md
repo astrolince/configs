@@ -12,6 +12,18 @@ RAM: 16 GB
 
 - Set RAM to 3200Mhz.
 
+### Timeshift
+
+You can create restore points with it, and that can be useful if you break something.
+
+`$ sudo pacman -Syy --needed timeshift`
+
+Then open and config it as you like.
+
+You can also add this to automatically create restore points every time before you upgrade something with pacman:
+
+`$ sudo pacman -Sy --needed timeshift-autosnap`
+
 ### Pacman tweaks
 
 `$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
