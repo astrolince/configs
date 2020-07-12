@@ -104,7 +104,7 @@ Edit .desktop command like this:
     DNSSEC=yes
     DNSOverTLS=yes
 
-`$ sudo /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
+`$ sudo nano /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
 
     [main]
     dns=none
