@@ -94,7 +94,7 @@
 
 - Install gamemode:
 
-`sudo pacman -Syu gamemode`
+`$ sudo pacman -Syu --needed gamemode`
 
 - Enable Steam Play in Steam settings and enable all games with the last version.
 
@@ -148,15 +148,11 @@ Restore keys to `~/.ssh`
 
 ### Brave
 
-[Install](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
-
-Extensions:
+- Extensions:
 
 [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
-
-[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
 [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
@@ -166,24 +162,6 @@ Extensions:
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
-[Authy Chrome Extension](https://chrome.google.com/webstore/detail/authy-chrome-extension/fhgenkpocbhhddlgkjnfghpjanffonno)
-
-[Snowflake](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie)
-
-### VSCodium
-
-[Install](https://github.com/VSCodium/vscodium/releases)
-
 ### Standard Notes
 
 [Download](https://standardnotes.org/extensions?downloaded=linux)
-
-### gpa
-
-Download the deb package from https://packages.ubuntu.com/disco/gpa, convert to rpm with:
-
-`$ alien -r  -c -v  gpa*.deb`
-
-and install it with:
-
-`$ sudo rpm --install gpa*.rpm --nodeps --force`
