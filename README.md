@@ -90,6 +90,12 @@ dns=none
 
 systemd-resolved=false
 
+`$ sudo systemctl start systemd-resolved`
+
+`$ sudo systemctl enable systemd-resolved`
+
+`$ sudo systemctl restart NetworkManager`
+
 ### Steam tweak
 
 Install gamemode:
