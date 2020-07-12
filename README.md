@@ -61,7 +61,14 @@
 
 ### NetworkManager
 
-[/etc/NetworkManager/conf.d/30-randomize-mac-address.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/NetworkManager/conf.d/30-randomize-mac-address.conf)
+`$ sudo nano /etc/NetworkManager/conf.d/30-randomize-mac-address.conf`
+
+    [device-mac-randomization]
+    wifi.scan-rand-mac-address=yes
+    
+    [connection-mac-randomization]
+    ethernet.cloned-mac-address=random
+    wifi.cloned-mac-address=random
 
 `$ sudo systemctl restart NetworkManager`
 
