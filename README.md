@@ -1,20 +1,12 @@
 ## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
--En la BIOS cambié del modo "Normal" a "ASUS Optimized" que hace overclock automático y fijé la frequencia de las RAM en 3200Mhz
+### BIOS
 
--Manjaro en la rama stable
+Change "Normal" to "ASUS Optimized"
 
-sudo pacman-mirrors --api --set-branch stable --fasttrack
+Set RAM ro 3200Mhz
 
-sudo pacman -Syyuu
 
--Instale gamemode
-
-sudo pacman -S gamemode
-
--En Steam puse esto en las opciones de lanzamiento de cada juego (y active Steam Play con la ultima version de Proton)
-
-mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%
 
 -Activar ZRAM (si hay una particion swap hay que desactivarla y borrarla primero, eso se mira con "swapon --show")
 
@@ -76,6 +68,18 @@ sudo systemctl enable --now preload
 DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
 DNSSEC=yes
 DNSOverTLS=yes
+
+### Steam tweak
+
+Install gamemode:
+
+`sudo pacman -Syu gamemode`
+
+Enable Steam Play in Steam settings and enable all games with the last version.
+
+Set launch options per game to:
+
+`mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
 
 ### Oh My Zsh
 
