@@ -36,6 +36,15 @@ sudo systemctl enable --now systemd-swap
 
 y ver si esta funcionando nuestro nuevo swap *en ram* con "swapon --show"
 
+/etc/sysctl.d/90-swappiness.conf
+
+vm.vfs_cache_pressure=500
+vm.swappiness=100
+vm.dirty_background_ratio=1
+vm.dirty_ratio=50
+
+sudo sysctl --system
+
 sudo pacman -Syu preload
 
 sudo systemctl enable --now preload
