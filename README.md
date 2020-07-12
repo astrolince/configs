@@ -110,13 +110,15 @@
 
 ### Keybase
 
-[Install](https://keybase.io/docs/the_app/install_linux)
+- Install Keybase:
 
-Import the public key:
+`$ sudo pacman -Syu --needed keybase keybase-gui`
+
+- Import the public key:
 
 `$ keybase pgp export | gpg --import`
 
-Import the private key:
+- Import the private key:
 
 `$ keybase pgp export -s | gpg --allow-secret-key-import --import`
 
