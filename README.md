@@ -2,13 +2,29 @@
 
 ### BIOS
 
-Change "Normal" to "ASUS Optimized"
+- Change "Normal" to "ASUS Optimized"
 
-Set RAM ro 3200Mhz
+- Set RAM to 3200Mhz
 
+### Pacman tweaks
 
+`$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
 
--Activar ZRAM (si hay una particion swap hay que desactivarla y borrarla primero, eso se mira con "swapon --show")
+`$ sudo pacman -Syyuu`
+
+### General
+
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher steam brave qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh-es exa gamemode neofetch nano gparted zsh ruby python go telegram-desktop vlc kdenlive dnscrypt-proxy`
+
+### Preload
+
+`sudo pacman -Syu --needed preload`
+
+`sudo systemctl enable --now preload`
+
+### ZRAM
+
+- Activar ZRAM (si hay una particion swap hay que desactivarla y borrarla primero, eso se mira con "swapon --show")
 
 sudo pacman -Syu systemd-swap
 
@@ -36,20 +52,6 @@ vm.dirty_background_ratio=1
 vm.dirty_ratio=50
 
 sudo sysctl --system
-
-sudo pacman -Syu preload
-
-sudo systemctl enable --now preload
-
-### Pacman tweaks
-
-`$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
-
-`$ sudo pacman -Syyuu`
-
-### General
-
-`$ sudo pacman -S --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher steam brave qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh-es exa gamemode neofetch nano gparted zsh ruby python go telegram-desktop vlc kdenlive dnscrypt-proxy`
 
 ### Vim
 
