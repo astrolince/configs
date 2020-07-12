@@ -1,8 +1,4 @@
-## Linux: [Fedora 31](https://getfedora.org/)
-
-### dnf tweaks
-
-[/etc/dnf/dnf.conf](https://raw.githubusercontent.com/astrolince/configs/master/etc/dnf/dnf.conf)
+## Linux: [Manjaro KDE](https://manjaro.org/)
 
 ### General
 
