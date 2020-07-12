@@ -24,34 +24,33 @@
 
 ### ZRAM
 
-- Activar ZRAM (si hay una particion swap hay que desactivarla y borrarla primero, eso se mira con "swapon --show")
+- Enable ZRAM (you need to disable and delete any working swap you may have first)
 
-sudo pacman -Syu systemd-swap
+`$ sudo pacman -Syu --needed systemd-swap`
 
-Crear un archivo "/etc/systemd/swap.conf.d/laptop.conf"
-
-sudo nano /etc/systemd/swap.conf.d/laptop.conf
-
-y ponerle esto:
+`$ sudo nano /etc/systemd/swap.conf.d/90-enable-zram.conf`
 
 zswap_enabled=0
+
 zram_enabled=1
+
 swapfc_enabled=1
 
-Activar:
+`$ sudo systemctl enable --now systemd-swap`
 
-sudo systemctl enable --now systemd-swap
+`$ swapon --show`
 
-y ver si esta funcionando nuestro nuevo swap *en ram* con "swapon --show"
-
-/etc/sysctl.d/90-swappiness.conf
+`$ sudo nano /etc/sysctl.d/90-swappiness.conf`
 
 vm.vfs_cache_pressure=500
+
 vm.swappiness=100
+
 vm.dirty_background_ratio=1
+
 vm.dirty_ratio=50
 
-sudo sysctl --system
+`$ sudo sysctl --system`
 
 ### Vim
 
@@ -75,7 +74,7 @@ syntax on
 
 ### DNSOverTLS
 
-`sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
+`$ sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
 
 DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
 DNSSEC=yes
