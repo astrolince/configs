@@ -14,7 +14,7 @@
 
 ### General
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher steam brave qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh-es exa gamemode neofetch nano gparted zsh ruby python go telegram-desktop vlc kdenlive
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher steam brave qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh-es exa gamemode neofetch nano gparted zsh ruby python go telegram-desktop vlc kdenlive`
 
 ### Preload
 
