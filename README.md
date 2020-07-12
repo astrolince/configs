@@ -14,7 +14,7 @@
 
 ### General
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es exa gamemode neofetch nano gparted ruby python go telegram-desktop vlc kdenlive`
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc kdenlive`
 
 ### Signal
 
@@ -59,6 +59,8 @@ Edit .desktop command like this:
 
 ### Vim
 
+`$ sudo pacman -Syu --needed vim`
+
 `$ sudo nano ~/.vimrc`
 
     set showmode
@@ -66,6 +68,10 @@ Edit .desktop command like this:
     set tabstop=4
     set expandtab
     syntax on
+    
+### Exa
+
+`$ sudo pacman -Syu --needed exa`
 
 ### NetworkManager randomize
 
