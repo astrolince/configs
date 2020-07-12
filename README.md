@@ -1,5 +1,11 @@
 ## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
+### Pacman tweaks
+
+`sudo pacman-mirrors --api --set-branch stable --fasttrack`
+
+`sudo pacman -Syyuu`
+
 ### General
 
 `$ sudo dnf install git tree vim fastboot adb flatpak snapd curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 dnscrypt-proxy tor torbrowser-launcher transmission-gtk steam gimp audacity libreoffice gnome-boxes exa gamemode neofetch nano gparted seahorse seahorse-nautilus zsh ffsend alien ruby python golang`
