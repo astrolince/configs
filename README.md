@@ -69,9 +69,19 @@ Edit .desktop command like this:
     set expandtab
     syntax on
     
+### Oh My Zsh
+
+`$ sudo pacman -Syu --needed zsh`
+
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+
 ### Exa
 
 `$ sudo pacman -Syu --needed exa`
+
+`$ echo 'alias ls=exa' >> ~/.bashrc`
+
+`$ echo 'alias ls=exa' >> ~/.zshrc`
 
 ### NetworkManager randomize
 
@@ -115,12 +125,6 @@ Edit .desktop command like this:
 - Set launch options (per game) to:
 
 `mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
-
-### Oh My Zsh
-
-`$ sudo pacman -Syu --needed zsh`
-
-[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 ### Keybase
 
