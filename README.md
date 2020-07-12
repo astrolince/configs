@@ -100,6 +100,7 @@ Edit .desktop command like this:
 
 `$ sudo nano /etc/systemd/resolved.conf.d/90-dns-over-tls.conf`
 
+    [Resolve]
     DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
     DNSSEC=yes
     DNSOverTLS=yes
