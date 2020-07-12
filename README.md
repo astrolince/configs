@@ -167,6 +167,14 @@ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
+### Bitwarden (standalone)
+
+`$ sudo snap install bitwarden`
+
+### Authy (standalone)
+
+`$ sudo snap install authy --beta`
+
 ### Standard Notes
 
 `$ sudo snap install standard-notes`
