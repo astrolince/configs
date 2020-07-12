@@ -38,6 +38,8 @@
 
 `$ swapon --show`
 
+- Tweak swappiness to avoid running out of memory:
+
 `$ sudo nano /etc/sysctl.d/90-swappiness.conf`
 
     vm.vfs_cache_pressure=500
