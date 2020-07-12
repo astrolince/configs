@@ -14,7 +14,15 @@
 
 ### General
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launche qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es exa gamemode neofetch nano gparted ruby python go telegram-desktop vlc kdenlive`
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es exa gamemode neofetch nano gparted ruby python go telegram-desktop vlc kdenlive`
+
+### Signal
+
+`$ sudo pacman -Syu --needed signal-desktop`
+
+Edit .desktop command like this:
+
+`signal-desktop --start-in-tray`
 
 ### Preload
 
