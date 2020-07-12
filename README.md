@@ -156,6 +156,10 @@ Edit .desktop command like this:
 
 Paste to https://github.com/settings/ssh.
 
+`$ echo 'export GPG_TTY=$(tty)' >> ~/.bashrc`
+
+`$ echo 'export GPG_TTY=$(tty)' >> ~/.zshrc`
+
 `$ git config --global user.signingkey CC39C6D77BDF0053`
 
 `$ git config --global commit.gpgsign true`
