@@ -2,9 +2,9 @@
 
 ### Pacman tweaks
 
-`sudo pacman-mirrors --api --set-branch stable --fasttrack`
+`$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
 
-`sudo pacman -Syyuu`
+`$ sudo pacman -Syyuu`
 
 ### General
 
