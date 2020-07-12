@@ -2,9 +2,9 @@
 
 ### BIOS
 
-- Change "Normal" to "ASUS Optimized"
+- Change "Normal" to "ASUS Optimized".
 
-- Set RAM to 3200Mhz
+- Set RAM to 3200Mhz.
 
 ### Pacman tweaks
 
