@@ -1,5 +1,41 @@
 ## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
+-En la BIOS cambié del modo "Normal" a "ASUS Optimized" que hace overclock automático y fijé la frequencia de las RAM en 3200Mhz
+
+-Manjaro en la rama stable
+
+sudo pacman-mirrors --api --set-branch stable --fasttrack
+
+sudo pacman -Syyuu
+
+-Instale gamemode
+
+sudo pacman -S gamemode
+
+-En Steam puse esto en las opciones de lanzamiento de cada juego (y active Steam Play con la ultima version de Proton)
+
+mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%
+
+-Activar ZRAM (si hay una particion swap hay que desactivarla y borrarla primero, eso se mira con "swapon --show")
+
+sudo pacman -Syu systemd-swap
+
+Crear un archivo "/etc/systemd/swap.conf.d/laptop.conf"
+
+sudo nano /etc/systemd/swap.conf.d/laptop.conf
+
+y ponerle esto:
+
+zswap_enabled=0
+zram_enabled=1
+swapfc_enabled=1
+
+Activar:
+
+sudo systemctl enable --now systemd-swap
+
+y ver si esta funcionando nuestro nuevo swap *en ram* con "swapon --show"
+
 ### Pacman tweaks
 
 `$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
