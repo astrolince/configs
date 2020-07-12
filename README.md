@@ -114,13 +114,13 @@ Edit .desktop command like this:
 
 `$ sudo systemctl restart NetworkManager`
 
-### Steam tweak
+### Steam tweaks
 
 - Install Steam and gamemode:
 
 `$ sudo pacman -Syu --needed steam gamemode`
 
-- Enable Steam Play in Steam settings and enable all games with the last version.
+- Enable Steam Play in Steam settings and enable all games with the last Proton version.
 
 - Set launch options (per game) to:
 
