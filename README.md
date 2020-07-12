@@ -14,7 +14,7 @@
 
 ### General
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher steam brave qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh-es exa gamemode neofetch nano gparted zsh ruby python go telegram-desktop vlc kdenlive`
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree vim base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launche qbittorrent virtualbox virtualbox-host-dkms virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es exa gamemode neofetch nano gparted ruby python go telegram-desktop vlc kdenlive`
 
 ### Preload
 
@@ -59,7 +59,7 @@
     set expandtab
     syntax on
 
-### NetworkManager
+### NetworkManager randomize
 
 `$ sudo nano /etc/NetworkManager/conf.d/30-randomize-mac-address.conf`
 
@@ -92,21 +92,21 @@
 
 ### Steam tweak
 
-- Install gamemode:
+- Install Steam and gamemode:
 
-`$ sudo pacman -Syu --needed gamemode`
+`$ sudo pacman -Syu --needed steam gamemode`
 
 - Enable Steam Play in Steam settings and enable all games with the last version.
 
-- Set launch options per game to:
+- Set launch options (per game) to:
 
 `mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
 
 ### Oh My Zsh
 
-[Install](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+`$ sudo pacman -Syu --needed zsh`
 
-[~/.zshrc](https://raw.githubusercontent.com/astrolince/configs/master/~/.zshrc)
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 ### Keybase
 
@@ -136,10 +136,6 @@ Restore keys to `~/.ssh`
 
 `$ git config --global commit.gpgsign true`
 
-### Rust
-
-`$ curl https://sh.rustup.rs -sSf | sh`
-
 ### nvm
 
 [Install](https://github.com/nvm-sh/nvm#install--update-script)
@@ -152,6 +148,10 @@ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 `$ curl -L git.io/hosty | sh`
 
 ### Brave
+
+- Install Brave:
+
+`$ sudo pacman -Syu --needed brave`
 
 - Extensions:
 
