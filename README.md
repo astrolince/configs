@@ -154,7 +154,7 @@ Edit .desktop command like this:
 
 `$ cat ~/.ssh/id_rsa.pub`
 
-Paste to https://github.com/settings/ssh.
+Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
 `$ echo 'export GPG_TTY=$(tty)' >> ~/.bashrc`
 
