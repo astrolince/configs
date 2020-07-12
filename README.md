@@ -30,11 +30,9 @@
 
 `$ sudo nano /etc/systemd/swap.conf.d/90-enable-zram.conf`
 
-zswap_enabled=0
-
-zram_enabled=1
-
-swapfc_enabled=1
+    zswap_enabled=0
+    zram_enabled=1
+    swapfc_enabled=1
 
 `$ sudo systemctl enable --now systemd-swap`
 
@@ -42,13 +40,10 @@ swapfc_enabled=1
 
 `$ sudo nano /etc/sysctl.d/90-swappiness.conf`
 
-vm.vfs_cache_pressure=500
-
-vm.swappiness=100
-
-vm.dirty_background_ratio=1
-
-vm.dirty_ratio=50
+    vm.vfs_cache_pressure=500
+    vm.swappiness=100
+    vm.dirty_background_ratio=1
+    vm.dirty_ratio=50
 
 `$ sudo sysctl --system`
 
@@ -72,19 +67,15 @@ vm.dirty_ratio=50
 
 `$ sudo nano /etc/systemd/resolved.conf.d/90-dns-over-tls.conf`
 
-DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
-
-DNSSEC=yes
-
-DNSOverTLS=yes
+    DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+    DNSSEC=yes
+    DNSOverTLS=yes
 
 `$ sudo /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
 
-[main]
-
-dns=none
-
-systemd-resolved=false
+    [main]
+    dns=none
+    systemd-resolved=false
 
 `$ sudo systemctl enable --now systemd-resolved`
 
