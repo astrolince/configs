@@ -57,7 +57,7 @@ sudo sysctl --system
 
 `$ sudo nano ~/.vimrc`
 
-`set showmode
+set showmode
 
 set autoindent
 
@@ -65,7 +65,7 @@ set tabstop=4
 
 set expandtab
 
-syntax on`
+syntax on
 
 ### NetworkManager
 
