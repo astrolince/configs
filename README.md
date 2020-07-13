@@ -22,7 +22,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 ### Timeshift
 
-You can create restore points with it, and that can be useful if you break something.
+You can create restore points with it, and that can be useful if you break something:
 
 `$ sudo pacman -Syy --needed timeshift`
 
@@ -33,6 +33,8 @@ You can also add this to automatically create restore points every time before y
 `$ sudo pacman -Sy --needed timeshift-autosnap`
 
 ### Pacman tweaks
+
+Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
 
@@ -79,6 +81,8 @@ But if you run other kernels or you like to compile your own, you'll probably li
     syntax on
 
 ### Exa
+
+Replace `ls` command with `exa`:
 
 `$ sudo pacman -Syu --needed exa`
 
