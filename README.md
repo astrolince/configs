@@ -130,12 +130,12 @@ Edit .desktop command like this:
     DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
     DNSSEC=yes
     DNSOverTLS=yes
+    Domains=~.
 
 `$ sudo nano /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
 
     [main]
-    dns=none
-    systemd-resolved=false
+    dns=systemd-resolved
 
 `$ sudo systemctl enable --now systemd-resolved`
 
