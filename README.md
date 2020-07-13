@@ -102,7 +102,7 @@ Replace `ls` command with `exa`:
 
 `$ sudo pacman -Syu --needed systemd-swap`
 
-`$ sudo nano /etc/systemd/swap.conf.d/90-enable-zram.conf`
+`$ sudo nano /etc/systemd/swap.conf.d/99-enable-zram.conf`
 
     zswap_enabled=0
     zram_enabled=1
@@ -112,18 +112,18 @@ Replace `ls` command with `exa`:
 
 - Tweak swappiness to avoid running out of memory:
 
-`$ sudo nano /etc/sysctl.d/90-swappiness.conf`
+`$ sudo nano /etc/sysctl.d/99-swappiness.conf`
 
     vm.vfs_cache_pressure=500
     vm.swappiness=100
     vm.dirty_background_ratio=1
     vm.dirty_ratio=50
 
-`$ sudo sysctl --load /etc/sysctl.d/90-swappiness.conf`
+`$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
 
 ### NetworkManager randomize
 
-`$ sudo nano /etc/NetworkManager/conf.d/30-randomize-mac-address.conf`
+`$ sudo nano /etc/NetworkManager/conf.d/99-randomize-mac-address.conf`
 
     [device-mac-randomization]
     wifi.scan-rand-mac-address=yes
@@ -136,7 +136,7 @@ Replace `ls` command with `exa`:
 
 ### DNS over TLS
 
-`$ sudo nano /etc/systemd/resolved.conf.d/90-dns-over-tls.conf`
+`$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
 
     [Resolve]
     DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
@@ -144,7 +144,7 @@ Replace `ls` command with `exa`:
     DNSOverTLS=yes
     Domains=~.
 
-`$ sudo nano /etc/NetworkManager/conf.d/10-dns-systemd-resolved.conf`
+`$ sudo nano /etc/NetworkManager/conf.d/99-dns-systemd-resolved.conf`
 
     [main]
     dns=systemd-resolved
