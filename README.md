@@ -12,7 +12,11 @@ MB: ASUS TUF B450M-PRO Gaming
 
 ### BIOS
 
-- Change "Normal" to "ASUS Optimized".
+- Restore defaults.
+
+- Clear Secure Boot keys.
+
+- Change overclock mode from "Normal" to "ASUS Optimized".
 
 - Set RAM to 3200Mhz.
 
