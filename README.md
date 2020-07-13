@@ -70,8 +70,6 @@ Edit .desktop command like this:
 
 `$ sudo systemctl enable --now systemd-swap`
 
-`$ swapon --show`
-
 - Tweak swappiness to avoid running out of memory:
 
 `$ sudo nano /etc/sysctl.d/90-swappiness.conf`
