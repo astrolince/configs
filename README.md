@@ -40,15 +40,51 @@ You can also add this to automatically create restore points every time before y
 
 ### General
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher qbittorrent linux-lts-virtualbox-host-modules virtualbox virtualbox-guest-iso gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc kdenlive code`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg kgpg cronie wget aria2 tor torbrowser-launcher qbittorrent gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc kdenlive code lutris isousb`
 
-### Signal
+### Virtualbox
 
-`$ sudo pacman -Syu --needed signal-desktop`
+If you'll use only LTS kernels, you can install it this way:
 
-Edit .desktop command like this:
+`$ sudo pacman -Syu --needed linux-lts linux-lts-headers linux-lts-virtualbox-host-modules virtualbox virtualbox-guest-iso`
 
-`signal-desktop --start-in-tray`
+But if you run other kernels or you like to compile your own, you'll probably like a more generalist aproach:
+
+`$ sudo pacman -Syu --needed virtualbox-host-dkms virtualbox virtualbox-guest-iso`
+
+### Bitwarden (standalone)
+
+`$ sudo snap install bitwarden`
+
+### Authy (standalone)
+
+`$ sudo snap install authy --beta`
+
+### Oh My Zsh
+
+`$ sudo pacman -Syu --needed zsh`
+
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+
+### Vim
+
+`$ sudo pacman -Syu --needed vim`
+
+`$ nano ~/.vimrc`
+
+    set showmode
+    set autoindent
+    set tabstop=4
+    set expandtab
+    syntax on
+
+### Exa
+
+`$ sudo pacman -Syu --needed exa`
+
+`$ echo 'alias ls=exa' >> ~/.bashrc`
+
+`$ echo 'alias ls=exa' >> ~/.zshrc`
 
 ### Preload
 
@@ -81,32 +117,6 @@ Edit .desktop command like this:
 
 `$ sudo sysctl --load /etc/sysctl.d/90-swappiness.conf`
 
-### Vim
-
-`$ sudo pacman -Syu --needed vim`
-
-`$ nano ~/.vimrc`
-
-    set showmode
-    set autoindent
-    set tabstop=4
-    set expandtab
-    syntax on
-    
-### Oh My Zsh
-
-`$ sudo pacman -Syu --needed zsh`
-
-[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
-
-### Exa
-
-`$ sudo pacman -Syu --needed exa`
-
-`$ echo 'alias ls=exa' >> ~/.bashrc`
-
-`$ echo 'alias ls=exa' >> ~/.zshrc`
-
 ### NetworkManager randomize
 
 `$ sudo nano /etc/NetworkManager/conf.d/30-randomize-mac-address.conf`
@@ -138,18 +148,6 @@ Edit .desktop command like this:
 `$ sudo systemctl enable --now systemd-resolved`
 
 `$ sudo systemctl restart NetworkManager`
-
-### Steam tweaks
-
-- Install Steam and gamemode:
-
-`$ sudo pacman -Syu --needed steam gamemode`
-
-- Enable Steam Play in Steam settings and enable all Windows games with the last Proton version.
-
-- Set launch options (per game) to:
-
-`mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
 
 ### Keybase
 
@@ -189,6 +187,26 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
 `$ git config --global commit.gpgsign true`
 
+### Signal
+
+`$ sudo pacman -Syu --needed signal-desktop`
+
+Edit .desktop command like this:
+
+`signal-desktop --start-in-tray`
+
+### Steam tweaks
+
+- Install Steam and gamemode:
+
+`$ sudo pacman -Syu --needed steam gamemode`
+
+- Enable Steam Play in Steam settings and enable all Windows games with the last Proton version.
+
+- Set launch options (per game) to:
+
+`mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
+
 ### nvm
 
 `$ sudo pacman -Syu --needed nvm`
@@ -224,14 +242,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-
-### Bitwarden (standalone)
-
-`$ sudo snap install bitwarden`
-
-### Authy (standalone)
-
-`$ sudo snap install authy --beta`
 
 ### Standard Notes
 
