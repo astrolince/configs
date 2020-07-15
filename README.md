@@ -24,8 +24,8 @@ MB: ASUS TUF B450M-PRO Gaming
 
 Partitions:
 
-- 500 MB    FAT32  /boot/efi
-- XXX GB    F2FS   /    (with LUKS encryption)
+- 500 MB	FAT32	/boot/efi
+- XXX GB	F2FS	/	(with LUKS encryption)
 
 ### Timeshift
 
@@ -81,11 +81,11 @@ But if you run other kernels or you like to compile your own, you'll probably li
 
 `$ nano ~/.vimrc`
 
-    set showmode
-    set autoindent
-    set tabstop=4
-    set expandtab
-    syntax on
+	set showmode
+	set autoindent
+	set tabstop=4
+	set expandtab
+	syntax on
 
 ### Exa
 
