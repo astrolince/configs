@@ -20,6 +20,13 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Set RAM to 3200Mhz.
 
+### Installation
+
+Partitions:
+
+- 500 MB FAT32 /boot/efi
+- XXX GB F2FS /
+
 ### Timeshift
 
 You can create restore points with it, and that can be useful if you break something:
@@ -157,7 +164,7 @@ Replace `ls` command with `exa`:
 
 - Install Keybase:
 
-`$ sudo pacman -Syu --needed keybase keybase-gui`
+`$ sudo pacman -Syu --needed keybase keybase-gui kbfs`
 
 - Import the public key:
 
