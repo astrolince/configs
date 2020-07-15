@@ -111,9 +111,9 @@ Replace `ls` command with `exa`:
 
 `$ sudo nano /etc/systemd/swap.conf.d/99-enable-zram.conf`
 
-    zswap_enabled=0
-    zram_enabled=1
-    swapfc_enabled=1
+	zswap_enabled=0
+	zram_enabled=1
+	swapfc_enabled=1
 
 `$ sudo systemctl enable --now systemd-swap`
 
@@ -121,10 +121,10 @@ Replace `ls` command with `exa`:
 
 `$ sudo nano /etc/sysctl.d/99-swappiness.conf`
 
-    vm.vfs_cache_pressure=500
-    vm.swappiness=100
-    vm.dirty_background_ratio=1
-    vm.dirty_ratio=50
+	vm.vfs_cache_pressure=500
+	vm.swappiness=100
+	vm.dirty_background_ratio=1
+	vm.dirty_ratio=50
 
 `$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
 
@@ -132,12 +132,12 @@ Replace `ls` command with `exa`:
 
 `$ sudo nano /etc/NetworkManager/conf.d/99-randomize-mac-address.conf`
 
-    [device-mac-randomization]
-    wifi.scan-rand-mac-address=yes
-    
-    [connection-mac-randomization]
-    ethernet.cloned-mac-address=random
-    wifi.cloned-mac-address=random
+	[device-mac-randomization]
+	wifi.scan-rand-mac-address=yes
+	
+	[connection-mac-randomization]
+	ethernet.cloned-mac-address=random
+	wifi.cloned-mac-address=random
 
 `$ sudo systemctl restart NetworkManager`
 
@@ -145,16 +145,16 @@ Replace `ls` command with `exa`:
 
 `$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
 
-    [Resolve]
-    DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
-    DNSSEC=yes
-    DNSOverTLS=yes
-    Domains=~.
+	[Resolve]
+	DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+	DNSSEC=yes
+	DNSOverTLS=yes
+	Domains=~.
 
 `$ sudo nano /etc/NetworkManager/conf.d/99-dns-systemd-resolved.conf`
 
-    [main]
-    dns=systemd-resolved
+	[main]
+	dns=systemd-resolved
 
 `$ sudo systemctl enable --now systemd-resolved`
 
