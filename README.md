@@ -53,6 +53,10 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### Virtualbox
 
+If you'll use only the newest official kernel, you can install it this way:
+
+`$ sudo pacman -Syu --needed linux57 linux57-headers linux57-virtualbox-host-modules virtualbox virtualbox-guest-iso`
+
 If you'll use only LTS kernels, you can install it this way:
 
 `$ sudo pacman -Syu --needed linux-lts linux-lts-headers linux-lts-virtualbox-host-modules virtualbox virtualbox-guest-iso`
