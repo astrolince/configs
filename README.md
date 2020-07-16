@@ -222,6 +222,8 @@ Edit .desktop command like this:
 
 `mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
 
+In some Proton games can be useful to add `DXVK_ASYNC=1` too.
+
 - Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
 ### nvm
