@@ -216,11 +216,13 @@ Edit .desktop command like this:
 
 `$ sudo pacman -Syu --needed steam gamemode`
 
-- Enable Steam Play in Steam settings and enable all Windows games with the last Proton version.
+- Enable Steam Play in Steam settings.
 
 - Set launch options (per game) to:
 
 `mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
+
+- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
 ### nvm
 
