@@ -24,7 +24,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 Partitions:
 
-- 300 MB	FAT32	/boot/efi
+- 100 MB	FAT32	/boot/efi
 - XXX GB	F2FS	/	(with LUKS encryption)
 
 ### Timeshift
@@ -35,7 +35,7 @@ You can create restore points with it, and that can be useful if you break somet
 
 Then open and config it as you like.
 
-You can also add this to automatically create restore points every time before you upgrade something with pacman:
+You can also add this to automatically create restore points every time before you upgrade something with pacman (not recommended because it's slow):
 
 `$ sudo pacman -Sy --needed timeshift-autosnap`
 
@@ -121,7 +121,7 @@ Replace `ls` command with `exa`:
 
 `$ sudo systemctl enable --now systemd-swap`
 
-- Tweak swappiness to avoid running out of memory:
+- Tweak swappiness to avoid running out of memory (only if you have a low amount of RAM):
 
 `$ sudo nano /etc/sysctl.d/99-swappiness.conf`
 
