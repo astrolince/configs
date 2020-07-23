@@ -234,7 +234,7 @@ In some Proton games can be useful to add `DXVK_ASYNC=1` too.
 
 `$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc`
 
-### Hosty
+### [Hosty](https://astrolince.com/hosty)
 
 `$ curl -L git.io/hosty | sh`
 
