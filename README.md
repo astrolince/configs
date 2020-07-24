@@ -27,6 +27,12 @@ Partitions:
 - 100 MB	FAT32	/boot/efi
 - XXX GB	F2FS	/	(with LUKS encryption)
 
+### GRUB
+
+We want the kernel to tell us what is happening, remove `quiet`, `loglevel` & `log_priority` from kernel parameters in `/etc/default/grub` and run:
+
+`$ sudo update-grub`
+
 ### Timeshift
 
 You can create restore points with it, and that can be useful if you break something:
