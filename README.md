@@ -155,7 +155,80 @@ Replace `ls` command with `exa`:
 
 `$ sudo systemctl restart NetworkManager`
 
-### DNS over TLS
+### DNS over HTTPS
+
+`$ sudo pacman -Syu --needed dnscrypt-proxy`
+
+`$ sudo nano /etc/dnscrypt-proxy/dnscrypt-proxy.toml`
+
+	listen_addresses = ['127.0.0.1:53', '[::1]:53']
+	max_clients = 250
+
+	ipv4_servers = true
+	ipv6_servers = true
+
+	dnscrypt_servers = true
+	doh_servers = true
+
+	require_dnssec = true
+	require_nolog = true
+	require_nofilter = true
+	force_tcp = false
+
+	timeout = 5000
+	keepalive = 30
+
+	blocked_query_response = 'refused'
+
+	lb_strategy = 'ph'
+	lb_estimator = true
+
+	use_syslog = true
+
+	cert_refresh_delay = 240
+
+	dnscrypt_ephemeral_keys = true
+
+	fallback_resolvers = ['1.1.1.1:53', '1.0.0.1:53', '9.9.9.9:53', '8.8.8.8:53']
+	ignore_system_dns = true
+	netprobe_timeout = 60
+	netprobe_address = '1.1.1.1:53'
+
+	log_files_max_size = 10
+	log_files_max_age = 7
+	log_files_max_backups = 1
+
+	block_ipv6 = false
+	block_unqualified = true
+	block_undelegated = true
+	reject_ttl = 600
+
+	cache = true
+	cache_size = 4096
+	cache_min_ttl = 2400
+	cache_max_ttl = 86400
+	cache_neg_min_ttl = 60
+	cache_neg_max_ttl = 600
+
+	[sources]
+	  [sources.'public-resolvers']
+	  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
+	  cache_file = '/var/cache/dnscrypt-proxy/public-resolvers.md'
+	  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+	  prefix = ''
+
+	  [sources.'relays']
+	  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+	  cache_file = '/var/cache/dnscrypt-proxy/relays.md'
+	  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+	  refresh_delay = 72
+	  prefix = ''
+
+`$ sudo systemctl enable --now dnscrypt-proxy`
+
+Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
+
+### DNS over TLS (DNS over HTTPS is recommended over this)
 
 `$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
 
