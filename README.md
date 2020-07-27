@@ -55,7 +55,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### General
 
-`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc code lutris isousb net-tools gufw kdenlive torbrowser-launcher`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc code isousb net-tools gufw kdenlive torbrowser-launcher`
 
 ### KDE Applications
 
@@ -220,25 +220,6 @@ Replace `ls` command with `exa`:
 
 Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
 
-### DNS over TLS (DNS over HTTPS is recommended over this)
-
-`$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
-
-	[Resolve]
-	DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
-	DNSSEC=yes
-	DNSOverTLS=yes
-	Domains=~.
-
-`$ sudo nano /etc/NetworkManager/conf.d/99-dns-systemd-resolved.conf`
-
-	[main]
-	dns=systemd-resolved
-
-`$ sudo systemctl enable --now systemd-resolved`
-
-`$ sudo systemctl restart NetworkManager`
-
 ### Keybase
 
 - Install Keybase:
@@ -284,6 +265,10 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 Edit .desktop command like this:
 
 `signal-desktop --start-in-tray`
+
+### Gaming stuff
+
+`$ sudo pacman -Syu --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader lutris steam gamemode`
 
 ### Steam tweaks
 
@@ -340,3 +325,23 @@ In some Proton games can be useful to add `DXVK_ASYNC=1` too.
 ### Standard Notes
 
 `$ sudo snap install standard-notes`
+
+### DNS over TLS (DNS over HTTPS is recommended over this)
+
+`$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
+
+	[Resolve]
+	DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+	DNSSEC=yes
+	DNSOverTLS=yes
+	Domains=~.
+
+`$ sudo nano /etc/NetworkManager/conf.d/99-dns-systemd-resolved.conf`
+
+	[main]
+	dns=systemd-resolved
+
+`$ sudo systemctl enable --now systemd-resolved`
+
+`$ sudo systemctl restart NetworkManager`
+
