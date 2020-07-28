@@ -61,6 +61,17 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Syu --needed kgpg kget`
 
+### Compile a custom kernel (Xanmod)
+
+Add this to `/etc/environment`:
+
+	_microarchitecture=42
+	use_ns=y
+
+And compile it:
+
+`$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
+
 ### Virtualbox
 
 If you'll use only the newest official kernel, you can install it this way:
@@ -280,9 +291,9 @@ Edit .desktop command like this:
 
 - Set launch options (per game) to:
 
-`mesa_glthread=true RADV_PERFTEST=aco gamemoderun %command%`
+` RADV_PERFTEST=aco gamemoderun %command%`
 
-In some Proton games can be useful to add `DXVK_ASYNC=1` too.
+In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
 
 - Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
