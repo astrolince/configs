@@ -333,13 +333,13 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
-### Standard Notes
-
-`$ sudo snap install standard-notes`
-
 ### Tor Browser
 
 `$ flatpak install flathub com.github.micahflee.torbrowser-launcher`
+
+### Stremio
+
+`$ pamac install stremio-beta`
 
 ### DNS over TLS (DNS over HTTPS is recommended over this)
 
