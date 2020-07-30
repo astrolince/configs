@@ -24,7 +24,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 Partitions:
 
-- 100 MB	FAT32	/boot/efi
+- 100 MB	FAT32	/efi
 - XXX GB	F2FS	/	(with LUKS encryption)
 
 ### GRUB
