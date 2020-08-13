@@ -61,17 +61,6 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Syu --needed kgpg kget`
 
-### Compile a custom kernel (Xanmod)
-
-Add this to `/etc/environment`:
-
-	_microarchitecture=42
-	use_ns=y
-
-And compile it:
-
-`$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
-
 ### Virtualbox
 
 If you'll use only the newest official kernel, you can install it this way:
@@ -359,4 +348,15 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 `$ sudo systemctl enable --now systemd-resolved`
 
 `$ sudo systemctl restart NetworkManager`
+
+### Compile a custom kernel (Xanmod)
+
+Add this to `/etc/environment`:
+
+	_microarchitecture=42
+	use_ns=y
+
+And compile it:
+
+`$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
 
