@@ -59,7 +59,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### KDE Applications
 
-`$ sudo pacman -Syu --needed kgpg kget`
+`$ sudo pacman -Syu --needed kgpg`
 
 ### Virtualbox
 
