@@ -305,6 +305,8 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ pamac install stremio-beta`
 
+## Archived
+
 ### DNS over TLS (DNS over HTTPS is recommended over this)
 
 `$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
