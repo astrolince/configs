@@ -1,4 +1,4 @@
-## Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
+## Linux: [Manjaro](https://manjaro.org/)
 
 CPU: AMD Ryzen 5 3600
 
