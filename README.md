@@ -305,6 +305,31 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ pamac install stremio-beta`
 
+### ZRAM
+
+- Enable ZRAM (you need to disable and delete any working swap you may have first):
+
+`$ sudo pacman -Syu --needed systemd-swap`
+
+`$ sudo nano /etc/systemd/swap.conf.d/99-enable-zram.conf`
+
+	zswap_enabled=0
+	zram_enabled=1
+	swapfc_enabled=1
+
+`$ sudo systemctl enable --now systemd-swap`
+
+- Tweak swappiness to avoid running out of memory:
+
+`$ sudo nano /etc/sysctl.d/99-swappiness.conf`
+
+	vm.vfs_cache_pressure=500
+	vm.swappiness=100
+	vm.dirty_background_ratio=1
+	vm.dirty_ratio=50
+
+`$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
+
 ## Archived
 
 ### DNS over TLS (DNS over HTTPS is recommended over this)
@@ -336,28 +361,3 @@ Add this to `/etc/environment`:
 And compile it:
 
 `$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
-
-### ZRAM
-
-- Enable ZRAM (you need to disable and delete any working swap you may have first):
-
-`$ sudo pacman -Syu --needed systemd-swap`
-
-`$ sudo nano /etc/systemd/swap.conf.d/99-enable-zram.conf`
-
-	zswap_enabled=0
-	zram_enabled=1
-	swapfc_enabled=1
-
-`$ sudo systemctl enable --now systemd-swap`
-
-- Tweak swappiness to avoid running out of memory (only if you have a low amount of RAM):
-
-`$ sudo nano /etc/sysctl.d/99-swappiness.conf`
-
-	vm.vfs_cache_pressure=500
-	vm.swappiness=100
-	vm.dirty_background_ratio=1
-	vm.dirty_ratio=50
-
-`$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
