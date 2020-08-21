@@ -61,6 +61,10 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Syu --needed kgpg`
 
+### GNOME Applications
+
+`$ sudo pacman -Syu --needed gpg-crypter`
+
 ### Virtualbox
 
 If you'll use only the newest official kernel, you can install it this way:
