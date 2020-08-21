@@ -63,7 +63,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### GNOME Applications
 
-`$ sudo pacman -Syu --needed gpg-crypter`
+`$ sudo pacman -Syu --needed gpa`
 
 ### Virtualbox
 
