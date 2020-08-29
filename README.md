@@ -309,7 +309,7 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ pamac install stremio-beta`
 
-### ZRAM
+### ZRAM (can help when you have slow storage and a low amount of RAM)
 
 - Enable ZRAM (you need to disable and delete any working swap you may have first):
 
@@ -323,7 +323,7 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ sudo systemctl enable --now systemd-swap`
 
-- Tweak swappiness to avoid running out of memory:
+- Tweak swappiness to avoid running out of memory if you are limited in RAM:
 
 `$ sudo nano /etc/sysctl.d/99-swappiness.conf`
 
