@@ -69,7 +69,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### Flatpaks
 
-`$ flatpak install flathub com.github.micahflee.torbrowser-launcher org.telegram.desktop`
+`$ flatpak install flathub com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
 
 ### Virtualbox
 
@@ -336,9 +336,9 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
 
-## Archived
+### Archived
 
-### DNS over TLS (DNS over HTTPS is recommended over this)
+#### DNS over TLS (DNS over HTTPS is recommended over this)
 
 `$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
 
@@ -357,7 +357,7 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ sudo systemctl restart NetworkManager`
 
-### Compile a custom kernel (Xanmod)
+#### Compile a custom kernel (Xanmod)
 
 Add this to `/etc/environment`:
 
