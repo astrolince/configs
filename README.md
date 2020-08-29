@@ -1,4 +1,4 @@
-## Linux: [Manjaro](https://manjaro.org/)
+# configs
 
 CPU: AMD Ryzen 5 3600
 
@@ -10,7 +10,7 @@ M2: ADATA XPG Spectrix S40G 512 GB
 
 MB: ASUS TUF B450M-PRO Gaming
 
-### BIOS
+## BIOS
 
 - Restore defaults.
 
@@ -19,6 +19,8 @@ MB: ASUS TUF B450M-PRO Gaming
 - Change overclock mode from "Normal" to "ASUS Optimized".
 
 - Set RAM to 3200Mhz.
+
+## Linux: [Manjaro](https://manjaro.org/)
 
 ### Installation
 
