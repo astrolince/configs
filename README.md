@@ -57,7 +57,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### General
 
-`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go vlc code isousb net-tools gufw kdenlive vim exa croc`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go vlc code isousb net-tools gufw kdenlive vim exa croc qemu virt-manager`
 
 ### KDE Applications
 
@@ -65,7 +65,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### GNOME Applications
 
-`$ sudo pacman -Syu --needed gpa`
+`$ sudo pacman -Syu --needed gpa gnome-boxes`
 
 ### Flatpaks
 
