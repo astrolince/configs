@@ -57,7 +57,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### General
 
-`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity libreoffice-fresh libreoffice-fresh-es neofetch nano gparted ruby python go telegram-desktop vlc code isousb net-tools gufw kdenlive vim exa croc`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go vlc code isousb net-tools gufw kdenlive vim exa croc`
 
 ### KDE Applications
 
@@ -66,6 +66,10 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 ### GNOME Applications
 
 `$ sudo pacman -Syu --needed gpa`
+
+### Flatpaks
+
+`$ flatpak install flathub com.github.micahflee.torbrowser-launcher org.telegram.desktop`
 
 ### Virtualbox
 
@@ -302,10 +306,6 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-
-### Tor Browser
-
-`$ flatpak install flathub com.github.micahflee.torbrowser-launcher`
 
 ### Stremio
 
