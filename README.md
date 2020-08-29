@@ -199,7 +199,7 @@ Replace `ls` command with `exa`:
 
 Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
 
-### Keybase
+### Keybase (it's extremely poorly optimized, avoid running it in the background)
 
 - Install Keybase:
 
