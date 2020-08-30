@@ -57,7 +57,7 @@ Set the stable branch and regenerate the mirrors list with the fastest ones:
 
 ### General
 
-`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go vlc code isousb net-tools gufw kdenlive vim exa croc qemu virt-manager`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager`
 
 ### KDE Applications
 
@@ -121,12 +121,6 @@ Replace `ls` command with `exa`:
 
 `$ echo 'alias ls=exa' >> ~/.zshrc`
 
-### Preload
-
-`$ sudo pacman -Syu --needed preload`
-
-`$ sudo systemctl enable --now preload`
-
 ### NetworkManager randomize
 
 `$ sudo nano /etc/NetworkManager/conf.d/99-randomize-mac-address.conf`
@@ -165,7 +159,7 @@ Replace `ls` command with `exa`:
 
 	blocked_query_response = 'refused'
 
-	lb_strategy = 'ph'
+	lb_strategy = 'p2'
 	lb_estimator = true
 
 	use_syslog = true
@@ -309,7 +303,9 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 `$ pamac install stremio-beta`
 
-### ZRAM (can help when you have slow storage and a low amount of RAM)
+### Archived
+
+#### ZRAM (can help when you have slow storage and a low amount of RAM)
 
 - Enable ZRAM (you need to disable and delete any working swap you may have first):
 
@@ -333,8 +329,6 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 	vm.dirty_ratio=50
 
 `$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
-
-### Archived
 
 #### DNS over TLS (DNS over HTTPS is recommended over this)
 
@@ -365,3 +359,9 @@ Add this to `/etc/environment`:
 And compile it:
 
 `$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
+
+#### Preload
+
+`$ sudo pacman -Syu --needed preload`
+
+`$ sudo systemctl enable --now preload`
