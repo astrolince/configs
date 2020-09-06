@@ -1,5 +1,13 @@
 # configs
 
+## General guidelines and philosophy
+
+I'll try to keep this as simple as posible, following the KISS principle to increase mantainability and troubleshooting, and minimize unexpected behavior.
+
+Also, if I can keep something in the userspace using flatpaks without affecting usability, I'll prefer that to reduce system clutterness and increase security.
+
+## PC Master Race
+
 CPU: AMD Ryzen 5 3600
 
 GPU: AMD Radeon RX 5600 XT 6 GB
@@ -10,7 +18,7 @@ M2: ADATA XPG Spectrix S40G 512 GB
 
 MB: ASUS TUF B450M-PRO Gaming
 
-## BIOS
+### BIOS config
 
 - Restore defaults.
 
@@ -22,34 +30,9 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Customize fans speed to maximize silence.
 
-## Linux: [Manjaro](https://manjaro.org/)
+### Linux: [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
-### Installation
-
-Partitions:
-
-- 100 MB	FAT32	/efi
-- XXX GB	F2FS	/	(with LUKS encryption)
-
-### GRUB
-
-We want the kernel to tell us what is happening, remove `quiet`, `loglevel` & `log_priority` from kernel parameters in `/etc/default/grub` and run:
-
-`$ sudo update-grub`
-
-### Timeshift
-
-You can create restore points with it, and that can be useful if you break something:
-
-`$ sudo pacman -Syy --needed timeshift`
-
-Then open and config it as you like.
-
-You can also add this to automatically create restore points every time before you upgrade something with pacman (not recommended because it's slow):
-
-`$ sudo pacman -Sy --needed timeshift-autosnap`
-
-### Pacman tweaks
+#### Pacman tweaks
 
 Regenerate the mirrors list with the fastest ones and update the system:
 
@@ -57,53 +40,105 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 `$ sudo pacman -Syyuu`
 
-### General
+#### General
 
-`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager`
+`$ sudo pacman -Syu --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh vim exa dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux58 linux58-headers linux58-virtualbox-host-modules virtualbox virtualbox-guest-iso`
 
-### KDE Applications
+### For all distros:
 
-`$ sudo pacman -Syu --needed kgpg`
+#### Flatpaks
 
-### GNOME Applications
+`$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ sudo pacman -Syu --needed gpa gnome-boxes`
+`$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
-### Flatpaks
+`$ flatpak install Stremio+4.4.116.flatpak`
 
-`$ flatpak install flathub com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
 
-### Virtualbox
+`$ sudo nano /var/lib/flatpak/exports/share/applications/org.signal.Signal.desktop`
 
-If you'll use only the newest official kernel, you can install it this way:
+Add `--use-tray-icon` to the end of the Exec command.
 
-`$ sudo pacman -Syu --needed linux58 linux58-headers linux58-virtualbox-host-modules virtualbox virtualbox-guest-iso`
+#### Keybase
 
-If you'll use only LTS kernels, you can install it this way:
+- Import the public key:
 
-`$ sudo pacman -Syu --needed linux-lts linux-lts-headers linux-lts-virtualbox-host-modules virtualbox virtualbox-guest-iso`
+`$ keybase pgp export | gpg --import`
 
-But if you run other kernels or you like to compile your own, you'll probably like a more generalist aproach:
+- Import the private key:
 
-`$ sudo pacman -Syu --needed virtualbox-host-dkms virtualbox virtualbox-guest-iso`
+`$ keybase pgp export -s | gpg --allow-secret-key-import --import`
 
-### Bitwarden (standalone)
+#### Git
 
-`$ sudo snap install bitwarden`
+`$ git config --global color.ui true`
 
-### Authy (standalone)
+`$ git config --global user.name "astrolince"`
 
-`$ sudo snap install authy --beta`
+`$ git config --global user.email "astro@astrolince.com"`
 
-### Oh My Zsh
+`$ ssh-keygen -t rsa -b 4096 -C "astro@astrolince.com"`
 
-`$ sudo pacman -Syu --needed zsh`
+`$ cat ~/.ssh/id_rsa.pub`
+
+Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
+
+`$ echo 'export GPG_TTY=$(tty)' >> ~/.bashrc`
+
+`$ echo 'export GPG_TTY=$(tty)' >> ~/.zshrc`
+
+`$ git config --global user.signingkey CC39C6D77BDF0053`
+
+`$ git config --global commit.gpgsign true`
+
+#### Steam tweaks
+
+- Enable Steam Play in Steam settings.
+
+- Set launch options (per game) to:
+
+` RADV_PERFTEST=aco gamemoderun %command%`
+
+In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
+
+- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
+
+#### nvm
+
+`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc`
+
+`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc`
+
+#### [Hosty](https://astrolince.com/hosty/)
+
+`$ curl -L git.io/hosty | sh`
+
+#### Brave
+
+- Extensions:
+
+[Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
+
+[ClearURLs](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk)
+
+[Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
+
+[JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+
+[Privacy Possum](https://chrome.google.com/webstore/detail/privacy-possum/ommfjecdpepadiafbnidoiggfpbnkfbj)
+
+[Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
+
+[Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
+
+[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+
+#### Oh My Zsh
 
 [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
-### Vim
-
-`$ sudo pacman -Syu --needed vim`
+#### Vim
 
 `$ nano ~/.vimrc`
 
@@ -113,17 +148,15 @@ But if you run other kernels or you like to compile your own, you'll probably li
 	set expandtab
 	syntax on
 
-### Exa
+#### Exa
 
 Replace `ls` command with `exa`:
-
-`$ sudo pacman -Syu --needed exa`
 
 `$ echo 'alias ls=exa' >> ~/.bashrc`
 
 `$ echo 'alias ls=exa' >> ~/.zshrc`
 
-### NetworkManager randomize
+#### NetworkManager randomize
 
 `$ sudo nano /etc/NetworkManager/conf.d/99-randomize-mac-address.conf`
 
@@ -136,9 +169,7 @@ Replace `ls` command with `exa`:
 
 `$ sudo systemctl restart NetworkManager`
 
-### DNS over HTTPS
-
-`$ sudo pacman -Syu --needed dnscrypt-proxy`
+#### DNS over HTTPS
 
 `$ sudo nano /etc/dnscrypt-proxy/dnscrypt-proxy.toml`
 
@@ -200,103 +231,3 @@ Replace `ls` command with `exa`:
 `$ sudo systemctl enable --now dnscrypt-proxy`
 
 Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
-
-### Keybase (it's extremely poorly optimized, avoid running it in the background)
-
-- Install Keybase:
-
-`$ sudo pacman -Syu --needed keybase keybase-gui kbfs`
-
-- Import the public key:
-
-`$ keybase pgp export | gpg --import`
-
-- Import the private key:
-
-`$ keybase pgp export -s | gpg --allow-secret-key-import --import`
-
-### Git
-
-`$ sudo pacman -Syu --needed git`
-
-`$ git config --global color.ui true`
-
-`$ git config --global user.name "astrolince"`
-
-`$ git config --global user.email "astro@astrolince.com"`
-
-`$ ssh-keygen -t rsa -b 4096 -C "astro@astrolince.com"`
-
-`$ cat ~/.ssh/id_rsa.pub`
-
-Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
-
-`$ echo 'export GPG_TTY=$(tty)' >> ~/.bashrc`
-
-`$ echo 'export GPG_TTY=$(tty)' >> ~/.zshrc`
-
-`$ git config --global user.signingkey CC39C6D77BDF0053`
-
-`$ git config --global commit.gpgsign true`
-
-### Signal
-
-`$ flatpak install flathub org.signal.Signal`
-
-Add `--use-tray-icon` to the end of `/var/lib/flatpak/exports/share/applications/org.signal.Signal.desktop` Exec command.
-
-### Gaming stuff
-
-`$ sudo pacman -Syu --needed wine-staging retroarch lutris steam gamemode`
-
-### Steam tweaks
-
-- Install Steam and gamemode:
-
-`$ sudo pacman -Syu --needed steam gamemode`
-
-- Enable Steam Play in Steam settings.
-
-- Set launch options (per game) to:
-
-` RADV_PERFTEST=aco gamemoderun %command%`
-
-In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
-
-- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
-
-### nvm
-
-`$ sudo pacman -Sy --needed nvm`
-
-`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc`
-
-`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc`
-
-### [Hosty](https://astrolince.com/hosty/)
-
-`$ curl -L git.io/hosty | sh`
-
-### Brave
-
-- Install Brave:
-
-`$ sudo pacman -Syu --needed brave`
-
-- Extensions:
-
-[Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
-
-[ClearURLs](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk)
-
-[Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
-
-[JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
-
-[Privacy Possum](https://chrome.google.com/webstore/detail/privacy-possum/ommfjecdpepadiafbnidoiggfpbnkfbj)
-
-[Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
-
-[Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
-
-[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
