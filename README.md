@@ -46,7 +46,9 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
-*wip*
+#### Install everything
+
+`$ sudo dnf install android-tools` *wip*
 
 ### For all distros:
 
