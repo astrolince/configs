@@ -20,6 +20,8 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Set RAM to 3200Mhz.
 
+- Customize fans speed to maximize silence.
+
 ## Linux: [Manjaro](https://manjaro.org/)
 
 ### Installation
@@ -49,9 +51,9 @@ You can also add this to automatically create restore points every time before y
 
 ### Pacman tweaks
 
-Set the stable branch and regenerate the mirrors list with the fastest ones:
+Regenerate the mirrors list with the fastest ones and update the system:
 
-`$ sudo pacman-mirrors --api --set-branch stable --fasttrack`
+`$ sudo pacman-mirrors --fasttrack`
 
 `$ sudo pacman -Syyuu`
 
@@ -265,7 +267,7 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 ### nvm
 
-`$ sudo pacman -Syu --needed nvm`
+`$ sudo pacman -Sy --needed nvm`
 
 `$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc`
 
@@ -298,70 +300,3 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-
-### Stremio
-
-`$ pamac install stremio-beta`
-
-### Archived
-
-#### ZRAM (can help when you have slow storage and a low amount of RAM)
-
-- Enable ZRAM (you need to disable and delete any working swap you may have first):
-
-`$ sudo pacman -Syu --needed systemd-swap`
-
-`$ sudo nano /etc/systemd/swap.conf.d/99-enable-zram.conf`
-
-	zswap_enabled=0
-	zram_enabled=1
-	swapfc_enabled=1
-
-`$ sudo systemctl enable --now systemd-swap`
-
-- Tweak swappiness to avoid running out of memory if you are limited in RAM:
-
-`$ sudo nano /etc/sysctl.d/99-swappiness.conf`
-
-	vm.vfs_cache_pressure=500
-	vm.swappiness=100
-	vm.dirty_background_ratio=1
-	vm.dirty_ratio=50
-
-`$ sudo sysctl --load /etc/sysctl.d/99-swappiness.conf`
-
-#### DNS over TLS (DNS over HTTPS is recommended over this)
-
-`$ sudo nano /etc/systemd/resolved.conf.d/99-dns-over-tls.conf`
-
-	[Resolve]
-	DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
-	DNSSEC=yes
-	DNSOverTLS=yes
-	Domains=~.
-
-`$ sudo nano /etc/NetworkManager/conf.d/99-dns-systemd-resolved.conf`
-
-	[main]
-	dns=systemd-resolved
-
-`$ sudo systemctl enable --now systemd-resolved`
-
-`$ sudo systemctl restart NetworkManager`
-
-#### Compile a custom kernel (Xanmod)
-
-Add this to `/etc/environment`:
-
-	_microarchitecture=42
-	use_ns=y
-
-And compile it:
-
-`$ _microarchitecture=42 use_ns=y pamac install linux-xanmod linux-xanmod-headers`
-
-#### Preload
-
-`$ sudo pacman -Syu --needed preload`
-
-`$ sudo systemctl enable --now preload`
