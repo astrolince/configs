@@ -60,6 +60,8 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 `$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
 
+#### Signal
+
 `$ sudo nano /var/lib/flatpak/exports/share/applications/org.signal.Signal.desktop`
 
 Add `--use-tray-icon` to the end of the Exec command.
