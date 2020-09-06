@@ -48,7 +48,7 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 #### Install everything
 
-`$ sudo dnf install android-tools` *wip*
+`$ sudo dnf install android-tools flatpak snapd git tree @development-tools`
 
 ### For all distros:
 
@@ -56,11 +56,11 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
+
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
 `$ flatpak install Stremio+4.4.116.flatpak`
-
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice`
 
 #### Signal
 
