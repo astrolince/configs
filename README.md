@@ -42,7 +42,7 @@ Regenerate the mirrors list with the fastest ones and update the system:
 
 #### Install everything
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux58 linux58-headers linux58-virtualbox-host-modules virtualbox virtualbox-guest-iso nvm`
+`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks gimp audacity neofetch nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso nvm`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
