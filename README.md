@@ -4,7 +4,7 @@
 
 I'll try to keep this as simple as posible to increase mantainability and troubleshooting, and minimize unexpected behavior.
 
-Also, if I can keep something in the userspace using flatpaks without affecting usability, I'll prefer that to reduce system clutterness and increase security.
+Also, if I can keep something in the userspace using Flatpaks or Snaps without affecting usability, I'll prefer that to reduce system clutterness and increase security.
 
 ## PC Master Race
 
