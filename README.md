@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install everything
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso nvm`
+`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
@@ -73,6 +73,10 @@ Regenerate the mirrors list with the fastest ones:
 `$ sudo nano /var/lib/flatpak/exports/share/applications/org.signal.Signal.desktop`
 
 Add `--use-tray-icon` to the end of the Exec command.
+
+#### Oh My Zsh
+
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 #### Keybase
 
@@ -118,12 +122,6 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 
 - Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
-#### nvm
-
-`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc`
-
-`$ echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc`
-
 #### [Hosty](https://astrolince.com/hosty/)
 
 `$ curl -L git.io/hosty | sh`
@@ -147,10 +145,6 @@ In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1
 [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-
-#### Oh My Zsh
-
-[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 #### Vim
 
