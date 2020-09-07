@@ -2,7 +2,7 @@
 
 ## General guidelines and philosophy
 
-I'll try to keep this as simple as posible, following the KISS principle to increase mantainability and troubleshooting, and minimize unexpected behavior.
+I'll try to keep this as simple as posible to increase mantainability and troubleshooting, and minimize unexpected behavior.
 
 Also, if I can keep something in the userspace using flatpaks without affecting usability, I'll prefer that to reduce system clutterness and increase security.
 
@@ -34,9 +34,11 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### Pacman tweaks
 
-Regenerate the mirrors list with the fastest ones and update the system:
+Regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman-mirrors --fasttrack`
+
+#### Update system
 
 `$ sudo pacman -Syyuu`
 
@@ -45,6 +47,10 @@ Regenerate the mirrors list with the fastest ones and update the system:
 `$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso nvm`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
+
+#### Update system
+
+`$ sudo dnf update`
 
 #### Install everything
 
