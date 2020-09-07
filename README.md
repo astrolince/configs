@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools gufw vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode keybase keybase-gui kbfs wine-staging linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso code isousb kgpg`
+`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso keybase keybase-gui kbfs`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode dnf-plugins-core`
+`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode firewall-config seahhorse gnome-boxes dnf-plugins-core`
 
 #### Install Brave
 
@@ -76,7 +76,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice com.valvesoftware.Steam  org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity`
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice com.valvesoftware.Steam  org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
