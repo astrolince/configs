@@ -54,7 +54,15 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch gimp audacity nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode`
+`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch gimp audacity nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode dnf-plugins-core`
+
+#### Install Brave
+
+`$ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/`
+
+`$ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
+
+`$ sudo dnf install brave-browser`
 
 #### Install Keybase
 
