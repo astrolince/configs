@@ -42,7 +42,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Syyuu`
 
-#### Install everything
+#### Install from official repos
 
 `$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go net-tools gufw vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode keybase keybase-gui kbfs steam wine-staging linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso code isousb kgpg`
 
@@ -52,7 +52,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo dnf update`
 
-#### Install everything
+#### Install from official repos
 
 `$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch gimp audacity nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode`
 
