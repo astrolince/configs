@@ -203,7 +203,7 @@ Replace `ls` command with `exa`:
 
 `$ sudo nano /etc/dnscrypt-proxy/dnscrypt-proxy.toml`
 
-	listen_addresses = ['127.0.0.1:53', '[::1]:53']
+	listen_addresses = []
 	max_clients = 250
 
 	ipv4_servers = true
@@ -258,6 +258,6 @@ Replace `ls` command with `exa`:
 	    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
 	    cache_file = 'public-resolvers.md'
 
-`$ sudo systemctl enable --now dnscrypt-proxy`
+`$ sudo systemctl enable --now dnscrypt-proxy.socket`
 
 Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
