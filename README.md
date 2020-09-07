@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install everything
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go code isousb net-tools gufw vim exa croc qemu virt-manager kgpg zsh dnscrypt-proxy keybase keybase-gui kbfs wine-staging retroarch lutris steam gamemode linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso`
+`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch gimp audacity  nano gparted ruby python go net-tools gufw vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode keybase keybase-gui kbfs steam wine-staging linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso code isousb kgpg`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
@@ -54,7 +54,13 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install everything
 
-`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch`
+`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch gimp audacity nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy retroarch lutris gamemode`
+
+#### Install Keybase
+
+`$ sudo yum install https://prerelease.keybase.io/keybase_amd64.rpm`
+
+`$ run_keybase`
 
 ### For all distros:
 
