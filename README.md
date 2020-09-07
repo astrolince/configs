@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core`
+`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core gnome-tweaks`
 
 #### Install Brave
 
