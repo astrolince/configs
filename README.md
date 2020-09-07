@@ -88,6 +88,28 @@ Regenerate the mirrors list with the fastest ones:
 
 Add `--use-tray-icon` to the end of the Exec command.
 
+#### Steam tweaks
+
+- Enable Steam Play in Steam settings.
+
+- Set launch options (per game) to:
+
+` RADV_PERFTEST=aco gamemoderun %command%`
+
+In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
+
+- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
+
+#### Snaps
+
+`$ sudo systemctl enable --now snapd.socket`
+
+`$ sudo ln -s /var/lib/snapd/snap /snap`
+
+`$ sudo snap install code --classic`
+
+`$ sudo snap install authy --beta`
+
 #### Oh My Zsh
 
 [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
@@ -123,18 +145,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 `$ git config --global user.signingkey CC39C6D77BDF0053`
 
 `$ git config --global commit.gpgsign true`
-
-#### Steam tweaks
-
-- Enable Steam Play in Steam settings.
-
-- Set launch options (per game) to:
-
-` RADV_PERFTEST=aco gamemoderun %command%`
-
-In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
-
-- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
 #### [Hosty](https://astrolince.com/hosty/)
 
