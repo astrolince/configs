@@ -166,8 +166,6 @@ Extensions:
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
 
-[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-
 #### Vim
 
 `$ nano ~/.vimrc`
