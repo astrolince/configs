@@ -94,11 +94,11 @@ Add `--use-tray-icon` to the end of the Exec command.
 
 - Set launch options (per game) to:
 
-` RADV_PERFTEST=aco gamemoderun %command%`
+`gamemoderun %command%`
 
-In some Proton games can be useful to add `mesa_glthread=true` and `DXVK_ASYNC=1`(the last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
+In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning, and in some Vulkan games can be useful to add `RADV_PERFTEST=aco` and/or `DXVK_ASYNC=1`(this last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
 
-- Install [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
+- Try [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
 #### Snaps
 
