@@ -150,9 +150,7 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
 `$ curl -L git.io/hosty | sh`
 
-#### Brave
-
-Extensions:
+#### Brave Extensions
 
 [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
@@ -259,3 +257,29 @@ Replace `ls` command with `exa`:
 `$ sudo systemctl enable --now dnscrypt-proxy.socket`
 
 Change your connections DNS to 127.0.0.1 for IPv4 and ::1 for IPv6.
+
+#### GNOME Extensions
+
+[Arc Menu](https://extensions.gnome.org/extension/1228/arc-menu/)
+
+[Bitcoin Markets](https://extensions.gnome.org/extension/648/bitcoin-markets/)
+
+[Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+
+[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+
+[Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+[GameMode](https://extensions.gnome.org/extension/1852/gamemode/)
+
+[GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+
+[Impatience](https://extensions.gnome.org/extension/277/impatience/)
+
+[KStatusNotifierItem/AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+
+[OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+
+[Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)
+
+[Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
