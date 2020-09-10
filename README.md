@@ -56,21 +56,11 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core gnome-tweaks`
 
-#### Install Brave
+#### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
 
-`$ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/`
+#### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
 
-`$ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
-
-`$ sudo dnf install brave-browser`
-
-#### Install Keybase
-
-`$ sudo yum install https://prerelease.keybase.io/keybase_amd64.rpm`
-
-`$ run_keybase`
-
-#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
+#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-rpm-based-linux-distributions)
 
 ### For all distros:
 
