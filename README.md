@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso brave keybase keybase-gui kbfs`
+`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso brave keybase keybase-gui kbfs code`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
@@ -69,6 +69,8 @@ Regenerate the mirrors list with the fastest ones:
 `$ sudo yum install https://prerelease.keybase.io/keybase_amd64.rpm`
 
 `$ run_keybase`
+
+#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
 
 ### For all distros:
 
@@ -108,9 +110,7 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 `$ sudo snap install authy --beta`
 
-#### Oh My Zsh
-
-[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+#### [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 #### Keybase
 
