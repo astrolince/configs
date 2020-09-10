@@ -4,7 +4,7 @@
 
 I'll try to keep this as simple as posible to increase mantainability and troubleshooting, and minimize unexpected behavior.
 
-Also, if I can keep something in the userspace using Flatpaks or Snaps without affecting usability, I'll prefer that to reduce system clutterness and increase security.
+Also, if I can keep something in the userspace using Flatpaks without affecting usability, I'll prefer that to reduce system clutterness and increase security.
 
 ## PC Master Race
 
@@ -105,8 +105,6 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 `$ sudo systemctl enable --now snapd.socket`
 
 `$ sudo ln -s /var/lib/snapd/snap /snap`
-
-`$ sudo snap install code --classic`
 
 `$ sudo snap install authy --beta`
 
