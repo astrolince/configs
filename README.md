@@ -24,8 +24,6 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Clear Secure Boot keys.
 
-- Change overclock mode from "Normal" to "ASUS Optimized".
-
 - Set RAM to 3200Mhz.
 
 - Customize fans speed to maximize silence.
