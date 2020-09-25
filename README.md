@@ -26,6 +26,8 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Set RAM to 3200Mhz.
 
+- Enable virtualization.
+
 - Customize fans speed to maximize silence.
 
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
