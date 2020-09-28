@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core gnome-tweaks`
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-tweaks`
 
 #### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
 
@@ -78,7 +78,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice com.valvesoftware.Steam org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle`
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
