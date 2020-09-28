@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso brave keybase keybase-gui kbfs code`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
