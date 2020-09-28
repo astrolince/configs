@@ -46,7 +46,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code`
 
-### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
+### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/)
 
 #### Update system
 
@@ -61,6 +61,16 @@ Regenerate the mirrors list with the fastest ones:
 #### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
 
 #### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-rpm-based-linux-distributions)
+
+### Specific for [Fedora Silverblue](https://silverblue.fedoraproject.org/)
+
+#### Update system
+
+`$ rpm-ostree upgrade`
+
+#### Install from official repos
+
+`$ rpm-ostree install android-tools aria2 dnscrypt-proxy exa firewall-config git gnome-tweaks gparted lutris neofetch net-tools openssl p7zip p7zip-plugins qemu-kvm seahorse tor torsocks vim virt-install virt-manager zsh`
 
 ### For all distros:
 
