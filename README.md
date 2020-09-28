@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak snapd git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso brave keybase keybase-gui kbfs code`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg linux-latest linux-latest-headers linux-latest-virtualbox-host-modules virtualbox virtualbox-guest-iso brave keybase keybase-gui kbfs code`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/download/)
 
@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak snapd git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core gnome-tweaks`
+`$ sudo dnf install android-tools flatpak git tree @development-tools bash curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-boxes dnf-plugins-core gnome-tweaks`
 
 #### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
 
@@ -91,14 +91,6 @@ Add `--use-tray-icon` to the end of the Exec command.
 In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning, and in some Vulkan games can be useful to add `RADV_PERFTEST=aco` and/or `DXVK_ASYNC=1`(this last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
 
 - Try [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
-
-#### Snaps
-
-`$ sudo systemctl enable --now snapd.socket`
-
-`$ sudo ln -s /var/lib/snapd/snap /snap`
-
-`$ sudo snap install authy --beta`
 
 #### [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
