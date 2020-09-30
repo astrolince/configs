@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code steam`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code steam`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/)
 
@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-tweaks`
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-tweaks`
 
 #### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
 
@@ -76,7 +76,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ rpm-ostree install android-tools aria2 dnscrypt-proxy exa firewall-config git gnome-tweaks gparted lutris neofetch net-tools openssl p7zip p7zip-plugins qemu-kvm seahorse tor torsocks vim virt-install virt-manager zsh`
+`$ rpm-ostree install android-tools aria2 dnscrypt-proxy exa firewall-config git gnome-tweaks gparted lutris neofetch net-tools openssl p7zip p7zip-plugins qemu-kvm seahorse setools setools-gui tor torsocks util-linux-user vim virt-install virt-manager zsh`
 
 ### For all distros:
 
@@ -141,10 +141,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 `$ git config --global user.signingkey CC39C6D77BDF0053`
 
 `$ git config --global commit.gpgsign true`
-
-#### [Hosty](https://astrolince.com/hosty/)
-
-`$ curl -L git.io/hosty | sh`
 
 #### Brave Extensions
 
