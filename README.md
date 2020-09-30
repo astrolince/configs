@@ -44,7 +44,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree base-devel bash curl gawk gzip p7zip gnupg cronie wget aria2 tor torsocks neofetch nano gparted ruby python go net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code steam`
 
 ### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/)
 
@@ -98,7 +98,7 @@ Add `--use-tray-icon` to the end of the Exec command.
 
 `gamemoderun %command%`
 
-In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning, and in some Vulkan games can be useful to add `RADV_PERFTEST=aco` and/or `DXVK_ASYNC=1`(this last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
+In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning, and in some Vulkan/DirectX games can be useful to add `RADV_PERFTEST=aco` and/or `DXVK_ASYNC=1`(this last one is related to anti-cheats false positives, so don't use it in online games to avoid bans).
 
 - Try [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
