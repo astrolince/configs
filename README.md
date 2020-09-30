@@ -203,21 +203,17 @@ Replace `ls` command with `exa`:
 	require_dnssec = true
 	require_nolog = true
 	require_nofilter = true
+	disabled_server_names = []
 	force_tcp = false
 
 	timeout = 5000
 	keepalive = 30
 
-	blocked_query_response = 'refused'
-
 	lb_strategy = 'p2'
 	lb_estimator = true
 
 	use_syslog = true
-
 	cert_refresh_delay = 240
-
-	dnscrypt_ephemeral_keys = true
 
 	fallback_resolvers = ['1.1.1.1:53', '1.0.0.1:53', '9.9.9.9:53', '8.8.8.8:53']
 	ignore_system_dns = true
@@ -242,9 +238,9 @@ Replace `ls` command with `exa`:
 
 	[sources]
 	    [sources.'public-resolvers']
-	    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md']
-	    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-	    cache_file = 'public-resolvers.md'
+  	    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md']
+  	    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+ 	    cache_file = '/var/cache/dnscrypt-proxy/public-resolvers.md'
 
 `$ sudo systemctl enable --now dnscrypt-proxy.socket`
 
