@@ -12,7 +12,7 @@ CPU: AMD Ryzen 5 3600
 
 GPU: AMD Radeon RX 5600 XT 6 GB
 
-RAM: 16 GB (2 x GeIL Super Luce 8 GB DDR4 3200MHz)
+RAM: 32 GB (4 x GeIL Super Luce 8 GB DDR4 3200MHz)
 
 M2: ADATA XPG Spectrix S40G 512 GB
 
