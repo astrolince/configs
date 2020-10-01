@@ -90,7 +90,7 @@ Regenerate the mirrors list with the fastest ones:
 	gpgkey=https://brave-browser-rpm-beta.s3.brave.com/brave-core-nightly.asc
 	EOF
 
-`$ rpm-ostre install brave-browser-beta`
+`$ rpm-ostree install brave-browser-beta`
 
 #### Install Keybase
 
@@ -124,7 +124,7 @@ Reboot to use the RPM Fusion repos.
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle`
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle com.leinardi.gst org.gnome.Boxes`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
