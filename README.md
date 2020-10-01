@@ -78,7 +78,19 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ rpm-ostree install android-tools aria2 dnscrypt-proxy exa firewall-config git gnome-tweaks gparted lutris neofetch net-tools openssl p7zip p7zip-plugins qemu-kvm seahorse setools setools-gui tor torsocks util-linux-user vim virt-install virt-manager zsh`
 
-#### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
+#### Install Brave
+
+	$ sudo tee -a /etc/yum.repos.d/brave.repo << 'EOF'
+	[brave]
+	name=brave
+	baseurl=https://brave-browser-rpm-beta.s3.brave.com/x86_64/
+	enabled=1
+	gpgcheck=1
+	repo_gpgcheck=1
+	gpgkey=https://brave-browser-rpm-beta.s3.brave.com/brave-core-nightly.asc
+	EOF
+
+`$ rpm-ostre install brave-browser-beta`
 
 #### Install Keybase
 
