@@ -68,56 +68,6 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo dnf install steam`
 
-### Specific for [Fedora Silverblue](https://silverblue.fedoraproject.org/)
-
-#### Update system
-
-`$ rpm-ostree upgrade`
-
-#### Install from official repos
-
-`$ rpm-ostree install android-tools aria2 dnscrypt-proxy exa firewall-config git gnome-tweaks gparted lutris neofetch net-tools openssl p7zip p7zip-plugins qemu-kvm seahorse setools setools-gui tor torsocks util-linux-user vim virt-install virt-manager zsh`
-
-#### Install Brave
-
-	$ sudo tee -a /etc/yum.repos.d/brave.repo << 'EOF'
-	[brave]
-	name=brave
-	baseurl=https://brave-browser-rpm-beta.s3.brave.com/x86_64/
-	enabled=1
-	gpgcheck=1
-	repo_gpgcheck=1
-	gpgkey=https://brave-browser-rpm-beta.s3.brave.com/brave-core-nightly.asc
-	EOF
-
-`$ rpm-ostree install brave-browser-beta`
-
-#### Install Keybase
-
-`$ rpm-ostree install https://prerelease.keybase.io/keybase_amd64.rpm`
-
-#### Install VSCodium
-
-	$ sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
-	[gitlab.com_paulcarroty_vscodium_repo]
-	name=gitlab.com_paulcarroty_vscodium_repo
-	baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
-	enabled=1
-	gpgcheck=1
-	repo_gpgcheck=1
-	gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-	EOF
-
-`$ rpm-ostree install codium`
-
-#### Install Steam
-
-`$ rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-
-Reboot to use the RPM Fusion repos.
-
-`$ rpm-ostree install steam`
-
 ### For all distros:
 
 #### Flatpaks
