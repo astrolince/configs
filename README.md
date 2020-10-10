@@ -74,7 +74,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle com.leinardi.gst org.gnome.Boxes`
+`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle com.leinardi.gst org.gnome.Boxes me.kozec.syncthingtk`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
