@@ -76,6 +76,7 @@ done
 # else
 #     echo "Could not find framebuffer to unload!"
 
+
 sleep "${long_delay}"
 
 # Unload loaded GPU drivers

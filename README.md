@@ -26,9 +26,15 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Set RAM to 3200Mhz.
 
-- Enable virtualization.
+- Enable virtualization and IOMMU.
+
+- Disable CSM.
 
 - Customize fans speed to maximize silence.
+
+### Specific for [Arch Linux](https://www.archlinux.org/download/)
+
+`$ sudo pacman -Syyuu plasma-meta`
 
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
@@ -46,7 +52,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code steam`
 
-### Specific for [Fedora Workstation](https://getfedora.org/en/workstation/)
+### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
 
 #### Update system
 
@@ -54,7 +60,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config seahorse gnome-tweaks`
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config`
 
 #### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
 
@@ -133,8 +139,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 `$ git config --global commit.gpgsign true`
 
 #### Brave Extensions
-
-[Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
 [ClearURLs](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk)
 
