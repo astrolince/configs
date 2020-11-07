@@ -34,7 +34,9 @@ MB: ASUS TUF B450M-PRO Gaming
 
 ### Specific for [Arch Linux](https://www.archlinux.org/download/)
 
-`$ sudo pacman -Syyuu plasma-meta`
+`$ sudo reflector --verbose --latest 200 --sort rate --save /etc/pacman.d/mirrorlist`
+
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam plasma-meta reflector`
 
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
@@ -50,7 +52,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg brave keybase keybase-gui kbfs code steam`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave`
 
 ### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
 
