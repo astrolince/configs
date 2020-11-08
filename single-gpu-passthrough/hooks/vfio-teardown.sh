@@ -9,19 +9,26 @@ echo "1002 731f" > /sys/bus/pci/drivers/vfio-pci/remove_id
 echo "1002 731f" > /sys/bus/pci/drivers/amdgpu/new_id
 echo 1 > /sys/bus/pci/rescan
 
-sleep 2
+sleep 1
 
 # Unload VFIO drivers
 modprobe -r vfio-pci
-modprobe -r vfio_iommu_type1
 modprobe -r vfio
+modprobe -r vfio_iommu_type1
+modprobe -r vfio_virqfd
 
-sleep 2
+sleep 1
 
 # Kill stuff that may still be running by your user
 killall -u astro
 
-sleep 6
+sleep 1
+
+# Drop all RAM caches
+sync
+echo 3 > /proc/sys/vm/drop_caches
+
+sleep 3
 
 # Switch to graphical mode
 systemctl isolate graphical.target

@@ -13,8 +13,11 @@ systemctl isolate multi-user.target
 
 sleep 1
 
-# Load VFIO driver
+# Load VFIO drivers
 modprobe vfio_pci
+modprobe vfio
+modprobe vfio_iommu_type1
+modprobe vfio_virqfd
 
 sleep 1
 

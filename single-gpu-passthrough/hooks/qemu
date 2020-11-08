@@ -5,16 +5,15 @@ OPERATION="$2"
 
 if [[ $OBJECT == "win10" ]]; then
 	case "$OPERATION" in
-        	"prepare")
-                systemctl start libvirt-nosleep@"$OBJECT"  2>&1 | tee -a /var/log/libvirt/custom_hooks.log
-                /bin/vfio-startup.sh 2>&1 | tee -a /var/log/libvirt/custom_hooks.log
-                ;;
+		"prepare")
+		rm /var/log/libvirt/custom_hooks.log  2>&1 | tee -a /var/log/libvirt/custom_hooks.log
+		systemctl start libvirt-nosleep@"$OBJECT"  2>&1 | tee -a /var/log/libvirt/custom_hooks.log
+		/bin/vfio-startup.sh 2>&1 | tee -a /var/log/libvirt/custom_hooks.log
+		;;
 
-                "release")
-                systemctl stop libvirt-nosleep@"$OBJECT"  2>&1 | tee -a /var/log/libvirt/custom_hooks.log  
-                /bin/vfio-teardown.sh 2>&1 | tee -a /var/log/libvirt/custom_hooks.log
-                ;;
+		"release")
+		systemctl stop libvirt-nosleep@"$OBJECT"  2>&1 | tee -a /var/log/libvirt/custom_hooks.log  
+		/bin/vfio-teardown.sh 2>&1 | tee -a /var/log/libvirt/custom_hooks.log
+		;;
 	esac
 fi
-
-
