@@ -46,7 +46,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent gnome-keyring`
 
 ### For all distros:
 
