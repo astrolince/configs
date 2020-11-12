@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst`
+`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst com.github.vladimiry.ElectronMail com.tutanota.Tutanota`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
