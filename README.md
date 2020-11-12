@@ -102,8 +102,6 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
-`$ echo 'export GPG_TTY=$(tty)' >> ~/.bashrc`
-
 `$ echo 'export GPG_TTY=$(tty)' >> ~/.zshrc`
 
 `$ git config --global user.signingkey CC39C6D77BDF0053`
@@ -117,8 +115,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj)
 
 [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
-
-[Privacy Possum](https://chrome.google.com/webstore/detail/privacy-possum/ommfjecdpepadiafbnidoiggfpbnkfbj)
 
 [Privacy Settings](https://chrome.google.com/webstore/detail/privacy-settings/ijadljdlbkfhdoblhaedfgepliodmomj)
 
@@ -135,8 +131,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 #### Exa
 
 Replace `ls` command with `exa`:
-
-`$ echo 'alias ls=exa' >> ~/.bashrc`
 
 `$ echo 'alias ls=exa' >> ~/.zshrc`
 
