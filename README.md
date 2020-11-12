@@ -32,12 +32,6 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Customize fans speed to maximize silence.
 
-### Specific for [Arch Linux](https://www.archlinux.org/download/)
-
-`$ sudo reflector --verbose --latest 200 --sort rate --save /etc/pacman.d/mirrorlist`
-
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam plasma-meta reflector`
-
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
 #### Pacman tweaks
@@ -52,29 +46,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave`
-
-### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
-
-#### Update system
-
-`$ sudo dnf update`
-
-#### Install from official repos
-
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh util-linux-user dnscrypt-proxy lutris gamemode firewall-config`
-
-#### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
-
-#### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
-
-#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-rpm-based-linux-distributions)
-
-#### Install Steam
-
-`$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-
-`$ sudo dnf install steam`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent`
 
 ### For all distros:
 
@@ -82,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub org.signal.Signal com.github.micahflee.torbrowser-launcher org.telegram.desktop org.libreoffice.LibreOffice org.kde.kdenlive org.gimp.GIMP org.audacityteam.Audacity org.libretro.RetroArch org.blender.Blender im.riot.Riot org.kde.krita com.obsproject.Studio org.videolan.VLC com.transmissionbt.Transmission com.system76.Popsicle com.leinardi.gst org.gnome.Boxes me.kozec.syncthingtk`
+`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
@@ -90,9 +62,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Signal
 
-`$ sudo nano /var/lib/flatpak/exports/share/applications/org.signal.Signal.desktop`
-
-Add `--use-tray-icon` to the end of the Exec command.
+Edit app to add `--use-tray-icon` in the end of the Exec command.
 
 #### Steam tweaks
 
