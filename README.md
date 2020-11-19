@@ -76,7 +76,11 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 - Try [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
-#### [Install Oh My Fish](https://github.com/oh-my-fish/oh-my-fish#installation)
+#### Fish
+
+- Install [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish#installation)
+
+- Run fish_config
 
 #### Keybase
 
