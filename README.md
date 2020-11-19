@@ -46,7 +46,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager zsh dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent fish alacritty discord`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent fish alacritty discord`
 
 ### For all distros:
 
@@ -54,7 +54,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst com.github.vladimiry.ElectronMail com.tutanota.Tutanota`
+`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst com.github.vladimiry.ElectronMail com.tutanota.Tutanota io.lbry.lbry-app`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
@@ -77,8 +77,6 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 - Try [proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom).
 
 #### [Install Oh My Fish](https://github.com/oh-my-fish/oh-my-fish#installation)
-
-#### [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 
 #### Keybase
 
@@ -129,12 +127,6 @@ Paste to [https://github.com/settings/ssh](https://github.com/settings/ssh).
 	set tabstop=4
 	set expandtab
 	syntax on
-
-#### Exa
-
-Replace `ls` command with `exa`:
-
-`$ echo 'alias ls=exa' >> ~/.zshrc`
 
 #### NetworkManager randomize
 
