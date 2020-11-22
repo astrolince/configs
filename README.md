@@ -34,6 +34,13 @@ MB: ASUS TUF B450M-PRO Gaming
 
 ### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
 
+#### DNF tweaks
+
+`$ sudo nano /etc/dnf/dnf.conf`
+
+	fastestmirror=True
+	deltarpm=True
+
 #### Update system
 
 `$ sudo dnf update`
