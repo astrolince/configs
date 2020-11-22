@@ -42,7 +42,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 `$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager util-linux-user dnscrypt-proxy lutris gamemode firewall-config`
 
-#### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
+#### [Install Brave](https://brave.com/linux/#fedora-28-centosrhel-8)
 
 #### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
 
