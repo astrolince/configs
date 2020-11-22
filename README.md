@@ -40,7 +40,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager util-linux-user dnscrypt-proxy lutris gamemode firewall-config`
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim emacs exa qemu virt-manager util-linux-user dnscrypt-proxy lutris wine winetricks wine-mono gamemode firewall-config fish kgpg gimp audacity retroarch libreoffice keepassxc blender krita qbittorrent alacritty vlc`
 
 #### [Install Brave](https://brave.com/linux/#fedora-28-centosrhel-8)
 
@@ -68,7 +68,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim python-neovim xclip emacs exa qemu virt-manager libvirt edk2-ovmf ebtables dnsmasq dnscrypt-proxy lutris gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent fish alacritty discord go-ipfs`
+`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim python-neovim xclip emacs exa qemu virt-manager libvirt edk2-ovmf ebtables dnsmasq dnscrypt-proxy lutris wine winetricks wine-mono wine-gecko gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent fish alacritty discord go-ipfs`
 
 ### For all distros:
 
