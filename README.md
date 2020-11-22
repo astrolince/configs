@@ -47,7 +47,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim emacs exa qemu virt-manager util-linux-user dnscrypt-proxy lutris wine winetricks wine-mono gamemode firewall-config fish kgpg gimp audacity retroarch libreoffice keepassxc blender krita qbittorrent alacritty vlc`
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim emacs exa qemu virt-manager util-linux-user dnscrypt-proxy lutris wine winetricks wine-mono gamemode firewall-config fish kgpg gimp audacity retroarch libreoffice keepassxc blender krita qbittorrent alacritty vlc kdenlive`
 
 #### [Install Brave](https://brave.com/linux/)
 
