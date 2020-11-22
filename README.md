@@ -32,6 +32,28 @@ MB: ASUS TUF B450M-PRO Gaming
 
 - Customize fans speed to maximize silence.
 
+### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
+
+#### Update system
+
+`$ sudo dnf update`
+
+#### Install from official repos
+
+`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim exa qemu virt-manager util-linux-user dnscrypt-proxy lutris gamemode firewall-config`
+
+#### [Install Brave](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#fedora-28-centos-rhel-8)
+
+#### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
+
+#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-rpm-based-linux-distributions)
+
+#### Install Steam
+
+`$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
+
+`$ sudo dnf install steam`
+
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
 #### Pacman tweaks
