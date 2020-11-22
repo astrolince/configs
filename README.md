@@ -42,11 +42,11 @@ MB: ASUS TUF B450M-PRO Gaming
 
 `$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim emacs exa qemu virt-manager util-linux-user dnscrypt-proxy lutris wine winetricks wine-mono gamemode firewall-config fish kgpg gimp audacity retroarch libreoffice keepassxc blender krita qbittorrent alacritty vlc`
 
-#### [Install Brave](https://brave.com/linux/#fedora-28-centosrhel-8)
+#### [Install Brave](https://brave.com/linux/)
 
 #### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
 
-#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-rpm-based-linux-distributions)
+#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
 
 #### Install Steam
 
