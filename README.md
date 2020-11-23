@@ -59,11 +59,13 @@ MB: ASUS TUF B450M-PRO Gaming
 
 `$ sudo dnf install @virtualization alacritty android-tools arc-theme aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools obs-studio p7zip p7zip-plugins qbittorrent qemu retroarch steam syncthing tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
 
-#### [Install Brave](https://brave.com/linux/)
+#### [Brave](https://brave.com/linux/)
 
-#### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
+#### [Keybase](https://keybase.io/docs/the_app/install_linux)
 
-#### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
+#### [VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
+
+#### [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop/releases)
 
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
