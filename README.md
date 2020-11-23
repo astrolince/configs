@@ -113,13 +113,16 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 #### Fish
 
-	$ chsh -s `which fish`
+`$ nano ~/.bashrc`
+	
+	if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+	then
+		exec fish
+	fi
 
-	$ fish
+`$ set -U fish_greeting`
 
-	$ set -U fish_greeting
-
-	$ fish_config
+`$ fish_config`
 
 #### Keybase
 
