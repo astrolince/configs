@@ -114,12 +114,12 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 #### Fish
 
 `$ nano ~/.bashrc`
-	
+
 	if [[ $- != *i* ]] ; then
 		# Shell is non-interactive.  Be done now!
 		return
 	fi
-
+	
 	# keep this line at the bottom of ~/.bashrc
 	[ -x /bin/fish ] && SHELL=/bin/fish exec /bin/fish
 
