@@ -57,7 +57,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### Install from repos
 
-`$ sudo dnf install @virtualization alacritty android-tools aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools p7zip p7zip-plugins qbittorrent qemu retroarch steam tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
+`$ sudo dnf install @virtualization alacritty android-tools arc-theme aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools obs-studio p7zip p7zip-plugins qbittorrent qemu retroarch steam tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
 
 #### [Install Brave](https://brave.com/linux/)
 
@@ -87,7 +87,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.github.vladimiry.ElectronMail com.leinardi.gst com.system76.Popsicle com.tutanota.Tutanota io.lbry.lbry-app`
+`$ flatpak install flathub com.github.micahflee.torbrowser-launcher com.github.vladimiry.ElectronMail com.leinardi.gst com.system76.Popsicle com.tutanota.Tutanota im.riot.Riot io.lbry.lbry-app me.kozec.syncthingtk org.signal.Signal org.telegram.desktop`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
