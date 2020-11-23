@@ -105,9 +105,13 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 #### Fish
 
-- Install [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish#installation)
+	$ chsh -s `which fish`
 
-- Run fish_config
+	$ fish
+
+	$ set -U fish_greeting
+
+	$ fish_config
 
 #### Keybase
 
