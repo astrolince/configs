@@ -47,7 +47,7 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### Install from official repos
 
-`$ sudo dnf install android-tools flatpak git tree curl gawk gzip p7zip p7zip-plugins gnupg2 wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim emacs exa qemu virt-manager util-linux-user dnscrypt-proxy lutris wine winetricks wine-mono gamemode firewall-config fish kgpg gimp audacity retroarch libreoffice keepassxc blender krita qbittorrent alacritty vlc kdenlive`
+`$ sudo dnf install alacritty android-tools aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools p7zip p7zip-plugins qbittorrent qemu retroarch tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
 
 #### [Install Brave](https://brave.com/linux/)
 
@@ -75,7 +75,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed android-tools flatpak git tree curl gawk gzip p7zip gnupg wget aria2 tor torsocks neofetch nano gparted net-tools vim neovim python-neovim xclip emacs exa qemu virt-manager libvirt edk2-ovmf ebtables dnsmasq dnscrypt-proxy lutris wine winetricks wine-mono wine-gecko gamemode gufw kgpg keybase keybase-gui kbfs code steam brave base-devel linux-lts linux-lts-headers linux-latest linux-latest-headers gimp audacity retroarch libreoffice-still libreoffice-still-es keepassxc syncthing-gtk kdenlive signal-desktop telegram-desktop torbrowser-launcher blender element-desktop krita obs-studio vlc qbittorrent fish alacritty discord go-ipfs`
+`$ sudo pacman -Sy --needed alacritty android-tools aria2 audacity base-devel blender brave code curl discord dnscrypt-proxy dnsmasq ebtables edk2-ovmf element-desktop emacs exa fish flatpak gamemode gawk gimp git gnupg go-ipfs gparted gufw gzip kbfs kdenlive keepassxc keybase keybase-gui kgpg krita libreoffice-still libreoffice-still-es libvirt linux-latest linux-latest-headers linux-lts linux-lts-headers lutris nano neofetch neovim net-tools obs-studio p7zip python-neovim qbittorrent qemu retroarch signal-desktop steam syncthing-gtk telegram-desktop tor torbrowser-launcher torsocks tree vim virt-manager vlc wget wine wine-gecko wine-mono winetricks xclip`
 
 ### For all distros:
 
@@ -83,7 +83,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.system76.Popsicle com.leinardi.gst com.github.vladimiry.ElectronMail com.tutanota.Tutanota io.lbry.lbry-app`
+`$ flatpak install flathub com.github.vladimiry.ElectronMail com.leinardi.gst com.system76.Popsicle com.tutanota.Tutanota io.lbry.lbry-app`
 
 `$ wget https://dl.strem.io/shell-linux/v4.4.116/Stremio+4.4.116.flatpak`
 
