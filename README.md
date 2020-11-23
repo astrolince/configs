@@ -115,10 +115,13 @@ In some OpenGL games can be useful to add `mesa_glthread=true` at the beginning,
 
 `$ nano ~/.bashrc`
 	
-	if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
-	then
-		exec fish
+	if [[ $- != *i* ]] ; then
+		# Shell is non-interactive.  Be done now!
+		return
 	fi
+
+	# keep this line at the bottom of ~/.bashrc
+	[ -x /bin/fish ] && SHELL=/bin/fish exec /bin/fish
 
 `$ set -U fish_greeting`
 
