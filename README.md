@@ -45,21 +45,19 @@ MB: ASUS TUF B450M-PRO Gaming
 
 `$ sudo dnf update`
 
-#### Install from official repos
+#### Add RPM Fusion repos
 
-`$ sudo dnf install alacritty android-tools aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools p7zip p7zip-plugins qbittorrent qemu retroarch tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
+`$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
+
+#### Install from repos
+
+`$ sudo dnf install alacritty android-tools aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools p7zip p7zip-plugins qbittorrent qemu retroarch steam tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks`
 
 #### [Install Brave](https://brave.com/linux/)
 
 #### [Install Keybase](https://keybase.io/docs/the_app/install_linux)
 
 #### [Install VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
-
-#### Install Steam
-
-`$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-
-`$ sudo dnf install steam`
 
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
