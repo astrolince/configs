@@ -63,10 +63,6 @@ MB: ASUS TUF B450M-PRO Gaming
 
 #### [Keybase](https://keybase.io/docs/the_app/install_linux)
 
-#### [VSCodium](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
-
-#### [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop/releases)
-
 ### Specific for [Manjaro KDE](https://manjaro.org/downloads/official/kde/)
 
 #### Pacman tweaks
