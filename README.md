@@ -10,7 +10,7 @@ Also, if I can keep something in the userspace using Flatpaks without affecting 
 
 CPU: AMD Ryzen 5 3600
 
-GPU: AMD Radeon RX 5600 XT 6 GB
+GPU: AMD Radeon RX 6800 16 GB
 
 RAM: 32 GB (4 x GeIL Super Luce 8 GB DDR4 3200MHz)
 
