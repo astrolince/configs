@@ -10,13 +10,15 @@ Also, if I can keep something in the userspace using Flatpaks without affecting 
 
 CPU: AMD Ryzen 5 3600
 
-GPU: AMD Radeon RX 6800 16 GB
+GPU 1: AMD Radeon RX 6800 16 GB
+
+GPU 2: AMD Radeon RX 5600 XT 6 GB
 
 RAM: 32 GB (4 x GeIL Super Luce 8 GB DDR4 3200MHz)
 
 M2: ADATA XPG Spectrix S40G 512 GB
 
-MB: ASUS TUF B450M-PRO Gaming
+MB: ASUS TUF Gaming X570-Pro (Wi-Fi)
 
 ### BIOS config
 
