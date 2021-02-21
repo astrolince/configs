@@ -34,6 +34,16 @@ MB: ASUS TUF Gaming X570-Pro (Wi-Fi)
 
 - Customize fans speed to maximize silence.
 
+### Specific for [Debian Testing KDE](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/weekly-live-builds/amd64/iso-hybrid/)
+
+#### Install from repos
+
+`$ sudo dnf install steam`
+
+#### [Brave](https://brave.com/linux/)
+
+#### [Keybase](https://keybase.io/docs/the_app/install_linux)
+
 ### Specific for [Fedora KDE](https://spins.fedoraproject.org/kde/)
 
 #### DNF tweaks
