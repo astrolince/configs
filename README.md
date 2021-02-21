@@ -38,6 +38,8 @@ MB: ASUS TUF Gaming X570-Pro (Wi-Fi)
 
 #### Edit /etc/apt/sources.list
 
+`$ sudo nano /etc/apt/sources.list`
+
 	# See https://wiki.debian.org/SourcesList for more information.
 	deb http://deb.debian.org/debian testing main contrib non-free
 	deb-src http://deb.debian.org/debian testing main contrib non-free
@@ -47,6 +49,10 @@ MB: ASUS TUF Gaming X570-Pro (Wi-Fi)
 
 	deb http://security.debian.org/debian-security testing-security main contrib non-free
 	deb-src http://security.debian.org/debian-security testing-security main contrib non-free
+	
+`$ sudo dpkg --add-architecture i386`
+
+`$ sudo apt update`
 
 #### Install from repos
 
