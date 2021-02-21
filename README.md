@@ -36,9 +36,21 @@ MB: ASUS TUF Gaming X570-Pro (Wi-Fi)
 
 ### Specific for [Debian Testing KDE](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/weekly-live-builds/amd64/iso-hybrid/)
 
+#### Edit /etc/apt/sources.list
+
+	# See https://wiki.debian.org/SourcesList for more information.
+	deb http://deb.debian.org/debian testing main contrib non-free
+	deb-src http://deb.debian.org/debian testing main contrib non-free
+
+	deb http://deb.debian.org/debian testing-updates main contrib non-free
+	deb-src http://deb.debian.org/debian testing-updates main contrib non-free
+
+	deb http://security.debian.org/debian-security testing-security main contrib non-free
+	deb-src http://security.debian.org/debian-security testing-security main contrib non-free
+
 #### Install from repos
 
-`$ sudo dnf install steam`
+`$ sudo apt install steam mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386`
 
 #### [Brave](https://brave.com/linux/)
 
