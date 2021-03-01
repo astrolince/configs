@@ -64,7 +64,7 @@ M2: 256 GB
 
 #### Install from repos
 
-`$ sudo apt install steam mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386`
+`$ sudo apt install wireguard steam mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386`
 
 #### [Brave](https://brave.com/linux/)
 
@@ -115,7 +115,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed alacritty android-tools aria2 audacity base-devel blender brave code curl dnscrypt-proxy dnsmasq ebtables edk2-ovmf emacs exa fish flatpak gamemode gawk gimp git gnupg go-ipfs gparted gufw gzip kbfs kdenlive keepassxc keybase keybase-gui kgpg krita libreoffice-still libreoffice-still-es libvirt linux-latest linux-latest-headers linux-lts linux-lts-headers lutris nano neofetch neovim net-tools obs-studio p7zip python-neovim qbittorrent qemu retroarch steam syncthing tor torsocks tree vim virt-manager vlc wget wine wine-gecko wine-mono winetricks xclip`
+`$ sudo pacman -Sy --needed wireguard-tools wireguard-dkms alacritty android-tools aria2 audacity base-devel blender brave code curl dnscrypt-proxy dnsmasq ebtables edk2-ovmf emacs exa fish flatpak gamemode gawk gimp git gnupg go-ipfs gparted gufw gzip kbfs kdenlive keepassxc keybase keybase-gui kgpg krita libreoffice-still libreoffice-still-es libvirt linux-latest linux-latest-headers linux-lts linux-lts-headers lutris nano neofetch neovim net-tools obs-studio p7zip python-neovim qbittorrent qemu retroarch steam syncthing tor torsocks tree vim virt-manager vlc wget wine wine-gecko wine-mono winetricks xclip`
 
 ### For all distros:
 
