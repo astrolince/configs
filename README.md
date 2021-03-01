@@ -252,9 +252,15 @@ Change your connections DNS to 127.0.0.1.
 
 #### Cloudflare Warp
 
-https://github.com/ViRb3/wgcf
+Download [wgcf](https://github.com/ViRb3/wgcf/releases).
 
-https://www.ianbashford.net/post/setupcloudflarewarplinuxarch/
+`$ ./wgcf register`
+
+`$ ./wgcf generate`
+
+`$ sudo cp wgcf-profile.conf /etc/wireguard`
+
+`$ sudo nmcli connection import type wireguard file /etc/wireguard/wgcf-profile.conf`
 
 #### GNOME Extensions
 
