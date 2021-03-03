@@ -64,7 +64,7 @@ M2: 256 GB
 
 #### Install from repos
 
-`$ sudo apt install libgl1-mesa-dri:i386 libglx-mesa0:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 steam wireguard`
+`$ sudo apt install tmux libgl1-mesa-dri:i386 libglx-mesa0:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 steam wireguard`
 
 #### [Brave](https://brave.com/linux/)
 
@@ -95,7 +95,7 @@ M2: 256 GB
 
 #### Install from repos
 
-`$ sudo dnf install @virtualization alacritty android-tools arc-theme aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools obs-studio p7zip p7zip-plugins qbittorrent qemu retroarch steam syncthing tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks wireguard-tools`
+`$ sudo dnf install tmux @virtualization alacritty android-tools arc-theme aria2 audacity blender curl dnscrypt-proxy emacs exa firewall-config fish flatpak gamemode gawk gimp git gnupg2 gparted gzip kdenlive keepassxc kgpg krita libreoffice lutris nano neofetch neovim net-tools obs-studio p7zip p7zip-plugins qbittorrent qemu retroarch steam syncthing tor torsocks tree util-linux-user vim virt-manager vlc wget wine wine-mono winetricks wireguard-tools`
 
 #### [Brave](https://brave.com/linux/)
 
@@ -115,7 +115,7 @@ Regenerate the mirrors list with the fastest ones:
 
 #### Install from official repos
 
-`$ sudo pacman -Sy --needed alacritty android-tools aria2 audacity base-devel blender brave code curl dnscrypt-proxy dnsmasq ebtables edk2-ovmf emacs exa fish flatpak gamemode gawk gimp git gnupg go-ipfs gparted gufw gzip kbfs kdenlive keepassxc keybase keybase-gui kgpg krita libreoffice-still libreoffice-still-es libvirt linux-latest linux-latest-headers linux-lts linux-lts-headers lutris nano neofetch neovim net-tools obs-studio p7zip python-neovim qbittorrent qemu retroarch steam syncthing tor torsocks tree vim virt-manager vlc wget wine wine-gecko wine-mono winetricks wireguard-dkms wireguard-tools xclip`
+`$ sudo pacman -Sy --needed tmux alacritty android-tools aria2 audacity base-devel blender brave code curl dnscrypt-proxy dnsmasq ebtables edk2-ovmf emacs exa fish flatpak gamemode gawk gimp git gnupg go-ipfs gparted gufw gzip kbfs kdenlive keepassxc keybase keybase-gui kgpg krita libreoffice-still libreoffice-still-es libvirt linux-latest linux-latest-headers linux-lts linux-lts-headers lutris nano neofetch neovim net-tools obs-studio p7zip python-neovim qbittorrent qemu retroarch steam syncthing tor torsocks tree vim virt-manager vlc wget wine wine-gecko wine-mono winetricks wireguard-dkms wireguard-tools xclip`
 
 ### For all distros:
 
