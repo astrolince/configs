@@ -123,11 +123,7 @@ Regenerate the mirrors list with the fastest ones:
 
 `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-`$ flatpak install flathub com.discordapp.Discord com.github.micahflee.torbrowser-launcher com.github.vladimiry.ElectronMail com.leinardi.gst com.system76.Popsicle com.tutanota.Tutanota im.riot.Riot io.lbry.lbry-app net.jami.Jami org.jitsi.jitsi-meet org.signal.Signal org.telegram.desktop`
-
-`$ wget https://dl.strem.io/shell-linux/v4.4.120/Stremio+4.4.120.flatpak`
-
-`$ flatpak install Stremio+4.4.120.flatpak`
+`$ flatpak install flathub com.discordapp.Discord com.github.micahflee.torbrowser-launcher com.github.vladimiry.ElectronMail com.leinardi.gst com.system76.Popsicle com.tutanota.Tutanota im.riot.Riot io.lbry.lbry-app net.jami.Jami org.jitsi.jitsi-meet org.signal.Signal org.telegram.desktop com.stremio.Stremio`
 
 #### Signal
 
